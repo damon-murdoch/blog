@@ -1,0 +1,23 @@
+.highlight {
+    color: #95d2d2;
+}
+a.highlight:hover {
+    color: #5f8686;
+}
+
+.heading {
+    color: #95d2d2;
+}
+.subheading {
+    color: #82b3b3;
+}
+.subsubheading {
+    color: #729e9e;
+}
+
+.link {
+    color: #729e9e;
+}
+a.link:hover {
+    color: #5f8686;
+}

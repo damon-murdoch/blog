@@ -40,12 +40,12 @@ function populate(page = 0) {
     const entry = document.createElement('div');
 
     // Apply container classes
-    entry.classList.add("container", "bg-dark", "text-secondary", "rounded", "my-2", "pb-3");
+    entry.classList.add("container", "bg-dark", "text-light", "rounded", "my-2", "p-4");
 
     // Create Entry Contents
     entry.innerHTML = `
-<p>${ENTRY.date}<p>
-<h4>${ENTRY.title}</h4>
+<p class='highlight'>${ENTRY.date}<p>
+<h3 class='highlight'>${ENTRY.title}</h3>
 <div>
 ${parsed}
 </div>
