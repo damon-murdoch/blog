@@ -49,33 +49,35 @@
         </nav>
       </div>
     </div>
-    <div id="body" class="container bg-dark rounded overflow-auto my-2 pb-3" style="opacity: 0.8; max-height: 90vh">
-      <div id="title" class="text-light text-center">
-        <h2>
-          <!-- Main Page Title Goes Here-->
-          Main Page Title Goes Here
-        </h2>
-        <p class="text-secondary">
-          <!-- Minor Page Subtitle Goes Here -->
-          Minor Page Subtitle Goes Here
-        </p>
-        <div class="container-fluid">
-          <p class="text-muted lead">
-            Developed by
-            <a class="text-secondary" href="https://twitter.com/SirScrubbington">Damon Murdoch</a>
-          </p>
+    <div class="main" style="overflow: scroll; max-height: 90vh">
+      <div id="head" class="py-4">
+        <div id="title" class="text-light text-center">
+          <div class="container-fluid">
+            <h5 class="text-muted">
+              <a class="text-secondary" href="https://twitter.com/SirScrubbington">Sir Scrubbington's Blog</a>
+            </h5>
+            <h6 class="text-muted">
+              Competitive Pokemon (VGC) Blog :^)
+            </6>
+          </div>
         </div>
-        <div>
-          <!-- Main Page Content Goes Here -->
-          <p>
-            Main Page Content Goes Here
-          </p>
-        </div>
+      </div>
+      <div id="content">
+        <!-- Blog entries will go here -->
       </div>
     </div>
     <div id="foot"></div>
     <div id="script">
       <!-- JavaScript Source -->
+
+      <!-- Blog Config -->
+      <script src="src/config.js"></script>
+
+      <!-- Blog Entry Data -->
+      <script src="src/entries.js"></script>
+
+      <!-- Common Library -->
+      <script src="src/common.js"></script>
 
       <!-- Main Application Source Library -->
       <script src="index.js"></script>
