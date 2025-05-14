@@ -40,7 +40,7 @@ function populate(page = 0) {
     const entry = document.createElement('div');
 
     // Apply container classes
-    entry.classList.add("container", "bg-dark", "text-light", "rounded", "my-2", "p-4");
+    entry.classList.add("container", "bg-dark", "text-soft", "rounded", "my-2", "p-4");
 
     // Create Entry Contents
     entry.innerHTML = `
@@ -51,8 +51,12 @@ ${parsed}
 </div>
 `;
 
+    // Apply style width
+    entry.style.minWidth = CONFIG.width.min;
+    entry.style.maxWidth = CONFIG.width.max;
+
     // Apply style opacity
-    entry.style.opacity = 0.8;
+    entry.style.opacity = CONFIG.opacity;
 
     // Add the entry to the page
     content.appendChild(entry);

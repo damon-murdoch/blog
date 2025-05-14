@@ -1,10 +1,137 @@
 // Blog Entries
 const ENTRIES = [
   {
+    "date": "2025-05-14",
+    "title": "Welcome to my new blog!",
+    "content": `
+[p]{Hey everyone! It has been about six years since I last wrote about Pokemon, but I've decided with my return to VGC I'd like to get back into writing as well. This site is now completely hosted on my own Github, as I've lost much of my work over the years from third-party sites shutting down or deleting them and I'd like to preserve it myself in future.}
+[p]{My old blog, [link]{Sir Scrubbington's Blog,https://sir-scrubbington.hatenablog.com} will be staying up for the forseeable future - However I will be migrating most of my old articles here over time. I'll be trying to keep everything as close to the original as possible, however I may fix minor formatting issues and typos as I see them. At the moment I'm planning on writing team reports, season writeups and potentially other projects moving forward.}
+[p]{My first new article is about my regulation G Groudon team, which can be seen below.}
+[p]{Thank you for reading!}
+`
+  },
+  {
+    "date": "2025-04-21",
+    "title": "Washed Up? A GrimmDon Team Report",
+    "content": `
+[p]{Hello everyone! My name is Damon, and I've been playing competitive Pokemon since 2015. I usually go by the name “SirScrubbington” or “Scrubbs” online, but on Pokemon Showdown I am known as “Jim's Esports”. I took a break from playing after Brisbane regionals 2024 due to burnout, but thanks to some of my friends I started to get back into playing late last year - towards the end of regulation H. I struggled to find a team I was comfortable with in that format, but with the return of the regulation G format from worlds last year I decided to pick one archetype and focus on it for the whole season.}
+[p]{When I started building my team, the Chinese Sun team was picking up in popularity - so I decided to try working with Groudon as my restricted. I've used Groudon at many tournaments over the years, both Primal and Non-Primal - So it's a Pokemon I felt very comfortable using.}
+[mon]{groudon,ogerpon-hearthflame,flutter-mane,raging-bolt,grimmsnarl,farigiraf}
+[paste]{https://pokepast.es/03a22d888c3014e8}
+[h]{Team Breakdown}
+[sh]{Groudon}
+[mon]{groudon}
+[code]{
+Groudon @ Clear Amulet  
+Ability: Drought  
+Tera Type: Fire  
+EVs: 252 HP / 156 Atk / 4 Def / 84 SpD / 12 Spe  
+Adamant Nature  
+- Protect  
+- Bulk Up  
+- Precipice Blades  
+- Heat Crash
+}
+[p]{Groudon is the core of the team - Precipice Blades is incredibly strong (as long as it hits) and sun-boosted Heat Crash deals base-120 power damage against most targets - An OHKO on almost any weakness (Except Calyrex-Ice), and even many neutral targets. Clear Amulet is an incredible item on Groudon, as it nullifies Intimidate and Parting Shot on Incineroar - Which was extremely annoying for Groudon in previous restricted formats. Tera Fire was chosen to block Will-o-Wisp, as well as further buffing the damage of Heat Crash. It also helps defensively against Ice, Grass and Fire moves. I tested several moves in the Bulk-Up slot including Swords Dance, High Horsepower and Stone Edge - But Bulk Up provided the best value in most matchups, especially against Zamazenta and Calyrex-Ice.}
+[sh]{Ogerpon-Hearthflame}
+[mon]{ogerpon-hearthflame}
+[code]{
+Ogerpon-Hearthflame @ Hearthflame Mask  
+Ability: Mold Breaker  
+Tera Type: Fire  
+EVs: 188 HP / 76 Atk / 52 Def / 4 SpD / 188 Spe  
+Adamant Nature  
+- Spiky Shield  
+- Follow Me  
+- Wood Hammer  
+- Ivy Cudgel
+}
+[p]{I decided to pick Ogerpon-Hearthflame as the first partner for the team - due to the incredible synergy of Groudon's sun and Ogerpon's Tera Fire Ivy Cudgel. Sun-boosted Ivy Cudgel is able to deal incredible damage, even without much investment. I tested a few different speed tiers for this Pokemon - I started very slow with lots of bulk, then bumped up to outspeed Adamant Urshifu, then eventually ended up using Ceree's worlds spread which outspeeds Modest Landorus.}
+[sh]{Flutter Mane}
+[mon]{flutter-mane}
+[code]{
+Flutter Mane @ Booster Energy  
+Ability: Protosynthesis  
+Tera Type: Fairy  
+EVs: 164 HP / 204 Def / 140 Spe  
+Timid Nature  
+- Protect  
+- Moonblast  
+- Icy Wind  
+- Taunt
+}
+[p]{Flutter Mane was the third Pokemon added to the team, as it has great synergy with Protosynthesis and Icy Wind for speed control. Tera Fairy Moonblast is also a fantastic offensive option and greatly helps with the Calyrex-Shadow matchup. Booster Energy was the item of choice, as it ensures we keep the speed boost even if sun is not active. While I opted to run 140 speed on the final team, some other possible speed stats are as follows:}
+[p]{[b]{12 (172):} Can run 124 SpA and 4 SpD, gets the speed boost by 2 points and has much better offense but you will lose the speed mirror with almost all opposing Flutter Mane. }
+[p]{[b]{84 (182):} Can run 52 SpA and 4 SpD, middle ground spread which outspeeds most Booster Energy Pokemon (Speed ties with 212+ Roaring Moon) and outspeeds Ceree's Miraidon without the speed boost by 1 point. Still gets the 2HKO on non-bulky Calyrex-Shadow with non-tera Moonblast.}
+[p]{Overall, I think all three of these spreads are quite good - I had planned to use 84 speed at Brisbane regionals, but I recommend 140 speed as it is more reliable for Roaring Moon and other Booster Energy Pokemon.}
+[sh]{Raging Bolt}
+[mon]{raging-bolt}
+[code]{
+Raging Bolt @ Life Orb  
+Ability: Protosynthesis  
+Tera Type: Electric  
+EVs: 148 HP / 36 Def / 100 SpA / 44 SpD / 180 Spe  
+Modest Nature  
+IVs: 20 Atk  
+- Protect  
+- Thunderbolt  
+- Draco Meteor  
+- Thunderclap
+}
+[p]{Raging Bolt makes a lot of sense on the team with Life Orb as it helps greatly with rain matchups, and can provide a Draco Meteor nuke in other matchups. It also functions as a lategame Miraidon answer, where you can pressure with Thunderclap after they Tera Fairy. I swapped between both Tera Fairy and Electric on Raging Bolt in different phases of the team - But overall I think Tera Electric is better for consistent damage as well as the OHKO on Fairy Miraidon with both sun and electric terrain active. However, Fairy can also be used as it helps against matchups such as Regidrago, Chien Pao and Draco-Locked Miraidon.}
+[p]{I considered running a different item such as Magnet or even Assault Vest over the season, but I decided that the offense provided by Life Orb is too important as the team already has a lot of bulk-invested Pokemon.}
+[sh]{Grimmsnarl}
+[mon]{grimmsnarl}
+[code]{
+Grimmsnarl @ Light Clay  
+Ability: Prankster  
+Level: 53  
+Tera Type: Ghost  
+EVs: 236 HP / 156 Def / 116 SpD  
+Calm Nature  
+IVs: 0 Atk  
+- Foul Play  
+- Light Screen  
+- Thunder Wave  
+- Reflect 
+}
+[p]{Grimmsnarl is one of the most important Pokemon on this team - Even though it was added this late. It can be used in almost every matchup, especially against Miraidon and Calyrex teams where survivability is extremely important. Light screen allows Groudon to live a Draco Meteor from Choice Specs Miraidon, and Reflect helps greatly in Zamazenta, Koraidon and Calyrex-Ice matchups. Both moves generally allow for your attackers to stick around longer and provide more value in each game. Foul Play is extremely useful for Calyrex matchups, non-Tera Calyrex-Shadow gets knocked out and Calyrex-Ice takes about 70-80%.}
+[p]{Ghost makes sense as the tera type of choice as you can block Fake Out, however this is not worth it in most matchups - But the pressure makes it worth running anyway. If you'd rather run a defensive type, Poison may be worth considering. You can also consider running Spirit Break with a careful spread instead - this helps more against Terapagos, Kyogre and Urshifu matchups but is more vulnerable to Intimidate and Parting Shot. Scary Face was considered in the Thunder Wave slot, to help with the Landorus matchup - However, Thunder Wave gives Grimmsnarl a field presence which forces the opponent to actively target it, and not just focus on the partner slot.}
+[sh]{Farigiraf}
+[mon]{farigiraf}
+[code]{
+Farigiraf (F) @ Safety Goggles  
+Ability: Armor Tail  
+Tera Type: Water  
+EVs: 220 HP / 172 Def / 4 SpA / 100 SpD / 12 Spe  
+Bold Nature  
+- Gravity  
+- Trick Room  
+- Foul Play  
+- Psychic 
+}
+[p]{The last Pokemon added to the team - Farigiraf was a key member which allowed for a Trick Room + Gravity gameplan which is great for game two mixups or Trick Room-weak matchups. This gamemode was generally weaker than the standard gameplan as it is hard to bring both Grimmsnarl and Farigiraf in the same match, and you often lose your Ogerpon to get Trick Room set up. However, Precipice Blades spam under Trick Room is very difficult to switch into with Gravity, as this provides perfect accuracy and the ability to hit flying types. Aside from the hard Trick Room gameplan, Farigiraf was useful to provide mindgame pressure against Fake Out heavy teams, as well as to pressure Foul Play against Calyrex-Shadow and Calyrex-Ice.}
+[h]{Common Leads}
+[sh]{Grimmsnarl + Groudon (Ogerpon + X)}
+[ul]{a,b,c,d,e}
+[sh]{Grimmsnarl + Flutter Mane (Groudon + Ogerpon)}
+[sh]{Grimmsnarl + Ogerpon (Groudon + x)}
+[sh]{Grimmsnarl + Raging Bolt (Groudon + Ogerpon)}
+[sh]{Ogerpon + Farigiraf (Groudon + X)}
+[sh]{Ogerpon + Groudon (X + Y)}
+[h]{Conclusion}
+[p]{I wasn't expecting much from the team at first, but I ended up really liking it - So I decided to work on developing and improving the team before Brisbane. The matchup into standard Koraidon, Miraidon and Shadow-Rider teams felt very strong, and most other restricteds were at least playable. Unfortunately, a lot of the meta developments later in regulation G made this team much harder to use - common threats such as Landorus-I, Calyrex-Ice and Pelipper cause massive problems for the team, especially when used together. Groudon also has the inherent issue of Precipice Blades having imperfect accuracy, so that along with Thunder Wave can lose games under the wrong circumstances.}
+[p]{In the end, I was unable to use the team at regionals due to sickness - However I was able to get first, second and top four at different local tournaments during the season. I also reached 1600s in the best-of-one Showdown Ladder with the team, which has been pretty rare for me in previous formats. I'm unsure how well the team would have played into the metagame at Brisbane, but I worked hard on it and I'm really happy with how the team turned out.}
+[p]{It was satisfying to work on one team for the whole season, but I did miss playing around with different teams - So I'm planning to try and find a balance between the two in the next format. I've been having a lot of fun with Zacian/Kyogre so far, but I'm also keeping my eye on Calyrex-Shadow/Zamazenta and Calyrex-Ice/Miraidon. Double-restricted formats generally allow for much more versatility than single-restricted, so I'm keen to see what teams become popular over the next few months.}
+[p]{I really want to thank everyone in the Brisbane VGC community for making me feel welcome, a lot of things have changed over the years but we have always had an extremely friendly and strong local community. I also want to thank the Pokemon Showdown VGC room, I've met some amazing people in there and I've had a lot of fun playing in tournaments, for both old and new formats. I will not be travelling for regionals this year, but I may consider competing more seriously in the 2026 season - at the moment I'm happy to keep doing my best at locals, one event at a time.}
+[p]{As far as writing goes, I'd love to go back to writing season reports like I did from 2016 to 2019 - So I'll definitely consider making a big event writeup once the 2025 season has finished. I will also consider writing about some of my older results over 2020 to 2023 if I have time.}
+[p]{Thank you very much for reading, I really appreciate it :)}
+`
+  },
+  {
     "date": "2019-09-01",
     "title": "SirScrubbington's VGC 2019 Moon and Worlds Ultra Report",
     "content": `
-[h]{Introduction}
 [p]{Hey guys! It's been about three months since I posted anything here, and I felt like after worlds and my draft leagues had finished it was time to upload my moon and ultra series team report. After a strong Sun Series showing, my Moon and Ultra series results are not nearly as impressive. However, I still earned my worlds invite and worked hard to earn the best results I could at the tournaments I played, and had a lot of fun teambuilding for both formats. This article will go through all of the tournaments I played since the start of Moon series, through to Ultra Series and up to the Pokemon World Championships in Washington DC, which was held on the 16th to the 18th of September, 2019.}
 [h]{Tournaments}
 [sh]{Moon Series}
@@ -230,19 +357,15 @@ const ENTRIES = [
 [paste]{https://pokepast.es/a4658e71bcd39916}
 [mon]{kyogre-primal,rayquaza-mega,gengar-mega,raichu,bronzong,hitmontop}
 [paste]{https://pokepast.es/d6fa3cbe949120a3}
-[ssh]{Rayquaza Xerneas}
+[ssh]{Other Teams}
 [mon]{rayquaza-mega,xerneas,gengar-mega,arcanine,hitmontop,amoonguss}
 [paste]{https://pokepast.es/a243c73da7841c23}
-[ssh]{Groudon Kyurem}
 [mon]{groudon-primal,kyurem-white,gengar-mega,sableye,crobat,bronzong}
 [paste]{https://pokepast.es/5fbd1dbda7dba274}
-[ssh]{Dialga Kyogre}
 [mon]{dialga,kyogre-primal,mawile-mega,thundurus,landorus-therian,gourgeist-super}
 [paste]{https://pokepast.es/afe2051cfc7b1b11}
-[ssh]{Zekrom Kyogre}
 [mon]{kyogre-primal,zekrom,gengar-mega,kangaskhan-mega,bronzong,crobat}
 [paste]{https://pokepast.es/d6bb3c0d28de4513}
-[ssh]{Yveltal Kyogre}
 [mon]{yveltal,kyogre,gengar-mega,raichu,bronzong,hitmontop}
 [paste]{https://pokepast.es/53af434df7811bad}
 [h]{Conclusion}

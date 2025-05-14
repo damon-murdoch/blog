@@ -28,6 +28,26 @@ function parseMonSprites(content) {
   return content;
 }
 
+function parseList(content) {
+  // Pokemon sprite regex
+  const regex = /\[(ul|li)\]\{(.*?)\}/g;
+
+  // Search over all of the 'list' regexes
+  for(const match of content.matchAll(regex)) {
+
+    // Full string match
+    const fullMatch = match[0];
+
+    // Get the matched sprites
+    const items = match[2].split(',');
+
+    console.log(items);
+  }
+
+  // Updated content
+  return content;
+}
+
 function parseLink(content) {
   
   // [link]{Team Paste,https://pokepast.es/17a7be476fee6db1}
@@ -65,11 +85,28 @@ function parseLink(content) {
 
   // Updated content
   return content;
+} 
+
+function parseFormatting(content) {
+  // Regex replacement for formatting tags
+  const regex = /\[(b|i|u|em|strong|mark|small|sub|sup|pre)\]\{(.*?)\}/gs;
+
+  // Search over all of the matches
+  for(const match of content.matchAll(regex)) {
+    // Generate parsed content
+    const parsed = `<${match[1]}>${match[2]}</${match[1]}>`;
+
+    // Replace the original with the html format
+    content = content.replace(match[0], parsed);
+  }
+
+  // Updated content
+  return content;
 }
 
 function parseGeneric(content) {
   // Generic regex replacement
-  const regex = /\[([^\]]+)\]\{(.*?)\}/g;
+  const regex = /\[([^\]]+)\]\{(.*?)\}/gs;
 
   // Search over all of the matches
   for(const match of content.matchAll(regex)) {
@@ -87,6 +124,10 @@ function parseGeneric(content) {
       // Team Paste
       case 'paste': {
         parsed = `<a href='${match[2]}' class='link'>Team Paste</a>`
+      }; break;
+      // Code Block
+      case 'code': {
+        parsed = `<code><pre class='subsubheading'>${match[2]}</code></pre>`
       }; break;
       // Heading
       case 'h': {
@@ -117,6 +158,12 @@ function parseGeneric(content) {
 function parse(content) {
   // Parse Pokemon sprites
   content = parseMonSprites(content);
+
+  // Parse formatting
+  content = parseFormatting(content);
+
+  // Parse lists
+  content = parseList(content);
 
   // Parse links
   content = parseLink(content);
