@@ -13,10 +13,10 @@ function parseMonSprites(content) {
 
     // Get the matched sprites
     const sprites = match[1].split(',');
-    for(const sprite of sprites) {
+    for (const sprite of sprites) {
       table += `<td><img src='img/box/${sprite}.png'></img></td>`;
     }
-    
+
     // Add table, tr elements to the contents
     table = `<table><tr>${table}</tr></table>`
 
@@ -30,18 +30,37 @@ function parseMonSprites(content) {
 
 function parseList(content) {
   // Pokemon sprite regex
-  const regex = /\[(ul|li)\]\{(.*?)\}/g;
+  const regex = /\[(ul|li)\]\{(.*?)\}/gs;
 
   // Search over all of the 'list' regexes
-  for(const match of content.matchAll(regex)) {
+  for (const match of content.matchAll(regex)) {
+
+    // List placeholder
+    let list = "";
 
     // Full string match
     const fullMatch = match[0];
 
-    // Get the matched sprites
-    const items = match[2].split(',');
+    // Get the list type
+    const type = match[1];
 
-    console.log(items);
+    // Get the list items
+    const items = match[2].split('\n');
+
+    // Add the list items
+    for (const item of items) {
+      // Item is not empty
+      if (item !== "") {
+        // Add item to the list
+        list += `<li>${item}</li>`
+      }
+    }
+
+    // Close the list
+    list = `<${type}>${list}</${type}>`;
+
+    // Replace the list with the parsed list
+    content = content.replace(fullMatch, list);
   }
 
   // Updated content
@@ -49,7 +68,7 @@ function parseList(content) {
 }
 
 function parseLink(content) {
-  
+
   // [link]{Team Paste,https://pokepast.es/17a7be476fee6db1}
 
   // Pokemon sprite regex
@@ -66,14 +85,14 @@ function parseLink(content) {
 
     // Exactly 2 values
     if (kv.length == 2) {
-      
+
       // Dereference keys
       const text = kv[0];
       const href = kv[1];
 
       // Generate the link text
       const link = `<a href='${href}' class='link'>${text}</a>`;
-      
+
       // Replace the original with the link
       content = content.replace(fullMatch, link);
     }
@@ -85,14 +104,14 @@ function parseLink(content) {
 
   // Updated content
   return content;
-} 
+}
 
 function parseFormatting(content) {
   // Regex replacement for formatting tags
   const regex = /\[(b|i|u|em|strong|mark|small|sub|sup|pre)\]\{(.*?)\}/gs;
 
   // Search over all of the matches
-  for(const match of content.matchAll(regex)) {
+  for (const match of content.matchAll(regex)) {
     // Generate parsed content
     const parsed = `<${match[1]}>${match[2]}</${match[1]}>`;
 
@@ -109,7 +128,7 @@ function parseGeneric(content) {
   const regex = /\[([^\]]+)\]\{(.*?)\}/gs;
 
   // Search over all of the matches
-  for(const match of content.matchAll(regex)) {
+  for (const match of content.matchAll(regex)) {
     // Full string match
     const fullMatch = match[0];
 
@@ -120,7 +139,7 @@ function parseGeneric(content) {
     let parsed = "";
 
     // Special cases
-    switch(tag) {
+    switch (tag) {
       // Team Paste
       case 'paste': {
         parsed = `<a href='${match[2]}' class='link'>Team Paste</a>`

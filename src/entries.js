@@ -4,15 +4,23 @@ const ENTRIES = [
     "date": "2025-05-14",
     "title": "Welcome to my new blog!",
     "content": `
-[p]{Hey everyone! It has been about six years since I last wrote about Pokemon, but I've decided with my return to VGC I'd like to get back into writing as well. This site is now completely hosted on my own Github, as I've lost much of my work over the years from third-party sites shutting down or deleting them and I'd like to preserve it myself in future.}
-[p]{My old blog, [link]{Sir Scrubbington's Blog,https://sir-scrubbington.hatenablog.com} will be staying up for the forseeable future - However I will be migrating most of my old articles here over time. I'll be trying to keep everything as close to the original as possible, however I may fix minor formatting issues and typos as I see them. At the moment I'm planning on writing team reports, season writeups and potentially other projects moving forward.}
+[p]{
+Hey everyone! It has been about six years since I last wrote about Pokemon, but I've decided with my return to VGC I'd like to get back into writing as well. 
+This site is now completely hosted on my own Github, as I've lost much of my work over the years from third-party sites shutting down or deleting them and 
+I'd like to preserve it myself in future. This site is still a work-in-progress, and not all features have been implemented yet.
+}
+[p]{
+My old blog, [link]{Sir Scrubbington's Blog,https://sir-scrubbington.hatenablog.com} will be staying up for the forseeable future - However I will be migrating 
+most of my old articles here over time. I'll be trying to keep everything as close to the original as possible, however I may fix minor formatting issues and 
+typos as I see them. At the moment I'm planning on writing team reports, season writeups and potentially about other projects moving forward.
+}
 [p]{My first new article is about my regulation G Groudon team, which can be seen below.}
 [p]{Thank you for reading!}
 `
   },
   {
     "date": "2025-04-21",
-    "title": "Washed Up? A GrimmDon Team Report",
+    "title": "Continental Heat Crash - A Groudonnieson Team Report",
     "content": `
 [p]{Hello everyone! My name is Damon, and I've been playing competitive Pokemon since 2015. I usually go by the name “SirScrubbington” or “Scrubbs” online, but on Pokemon Showdown I am known as “Jim's Esports”. I took a break from playing after Brisbane regionals 2024 due to burnout, but thanks to some of my friends I started to get back into playing late last year - towards the end of regulation H. I struggled to find a team I was comfortable with in that format, but with the return of the regulation G format from worlds last year I decided to pick one archetype and focus on it for the whole season.}
 [p]{When I started building my team, the Chinese Sun team was picking up in popularity - so I decided to try working with Groudon as my restricted. I've used Groudon at many tournaments over the years, both Primal and Non-Primal - So it's a Pokemon I felt very comfortable using.}
@@ -46,7 +54,12 @@ Adamant Nature
 - Wood Hammer  
 - Ivy Cudgel
 }
-[p]{I decided to pick Ogerpon-Hearthflame as the first partner for the team - due to the incredible synergy of Groudon's sun and Ogerpon's Tera Fire Ivy Cudgel. Sun-boosted Ivy Cudgel is able to deal incredible damage, even without much investment. I tested a few different speed tiers for this Pokemon - I started very slow with lots of bulk, then bumped up to outspeed Adamant Urshifu, then eventually ended up using Ceree's worlds spread which outspeeds Modest Landorus.}
+[p]{
+I decided to pick Ogerpon-Hearthflame as the first partner for the team, due to the incredible synergy of Groudon's sun and Ogerpon's Ivy Cudgel. 
+Sun-boosted Ivy Cudgel is able to deal incredible damage, even without much investment. I tested a few different speed tiers for this Pokemon - 
+I started very slow with lots of bulk, then bumped up to outspeed Adamant Urshifu, then eventually ended up using Ceree's worlds spread which 
+outspeeds Modest Landorus.
+}
 [sh]{Flutter Mane}
 [mon]{flutter-mane}
 [code]{
@@ -60,10 +73,15 @@ Timid Nature
 - Icy Wind  
 - Taunt
 }
-[p]{Flutter Mane was the third Pokemon added to the team, as it has great synergy with Protosynthesis and Icy Wind for speed control. Tera Fairy Moonblast is also a fantastic offensive option and greatly helps with the Calyrex-Shadow matchup. Booster Energy was the item of choice, as it ensures we keep the speed boost even if sun is not active. While I opted to run 140 speed on the final team, some other possible speed stats are as follows:}
-[p]{[b]{12 (172):} Can run 124 SpA and 4 SpD, gets the speed boost by 2 points and has much better offense but you will lose the speed mirror with almost all opposing Flutter Mane. }
-[p]{[b]{84 (182):} Can run 52 SpA and 4 SpD, middle ground spread which outspeeds most Booster Energy Pokemon (Speed ties with 212+ Roaring Moon) and outspeeds Ceree's Miraidon without the speed boost by 1 point. Still gets the 2HKO on non-bulky Calyrex-Shadow with non-tera Moonblast.}
-[p]{Overall, I think all three of these spreads are quite good - I had planned to use 84 speed at Brisbane regionals, but I recommend 140 speed as it is more reliable for Roaring Moon and other Booster Energy Pokemon.}
+[p]{
+Flutter Mane was the third Pokemon added to the team, as it has great synergy with Protosynthesis and Icy Wind for speed control. 
+Tera Fairy Moonblast is also a fantastic offensive option and helps with the Calyrex-Shadow matchup. Booster Energy was the item 
+of choice, as it ensures we keep the speed boost even if sun is not active. While I opted to run 140 speed on the final team, 
+some other possible speed stats are as follows:
+}
+[p]{[b]{12 (172):} 124 SpA and 4 SpD, gets the speed boost by 2 points and has much better offense - but you will lose the speed mirror with almost all opposing Flutter Mane. }
+[p]{[b]{84 (182):} 52 SpA and 4 SpD, middle ground spread which outspeeds most Booster Energy Pokemon (Speed ties with 212+ Roaring Moon) and outspeeds Ceree's Miraidon without the speed boost by 1 point. Still gets the 2HKO on non-bulky Calyrex-Shadow with non-tera Moonblast.}
+[p]{Overall, I think all three of these spreads are quite good - I had planned to use 84 speed at Brisbane regionals, but I now recommend 140 speed as it is more reliable for Roaring Moon and other Booster Energy Pokemon.}
 [sh]{Raging Bolt}
 [mon]{raging-bolt}
 [code]{
@@ -78,8 +96,18 @@ IVs: 20 Atk
 - Draco Meteor  
 - Thunderclap
 }
-[p]{Raging Bolt makes a lot of sense on the team with Life Orb as it helps greatly with rain matchups, and can provide a Draco Meteor nuke in other matchups. It also functions as a lategame Miraidon answer, where you can pressure with Thunderclap after they Tera Fairy. I swapped between both Tera Fairy and Electric on Raging Bolt in different phases of the team - But overall I think Tera Electric is better for consistent damage as well as the OHKO on Fairy Miraidon with both sun and electric terrain active. However, Fairy can also be used as it helps against matchups such as Regidrago, Chien Pao and Draco-Locked Miraidon.}
-[p]{I considered running a different item such as Magnet or even Assault Vest over the season, but I decided that the offense provided by Life Orb is too important as the team already has a lot of bulk-invested Pokemon.}
+[p]{
+Raging Bolt makes a lot of sense on the team with Life Orb as it helps greatly with rain matchups, and can provide a Draco Meteor nuke in other matchups. 
+It also functions as a lategame Miraidon answer, where you can pressure with Thunderclap after they Tera Fairy. I swapped between both Tera Fairy and 
+Electric on Raging Bolt in different phases of the team - But overall I think Tera Electric is better for consistent damage as well as the OHKO on 
+Fairy Miraidon with both sun and electric terrain active. However, Fairy can also be used as it helps against matchups such as Regidrago, 
+Chien Pao and Draco-Locked Miraidon.
+}
+[p]{
+I considered running several different items such as Assault Vest or even Magnet
+over the season, but I decided that the offense provided by Life Orb is 
+too important as the team already has a lot of bulk.
+}
 [sh]{Grimmsnarl}
 [mon]{grimmsnarl}
 [code]{
@@ -95,8 +123,20 @@ IVs: 0 Atk
 - Thunder Wave  
 - Reflect 
 }
-[p]{Grimmsnarl is one of the most important Pokemon on this team - Even though it was added this late. It can be used in almost every matchup, especially against Miraidon and Calyrex teams where survivability is extremely important. Light screen allows Groudon to live a Draco Meteor from Choice Specs Miraidon, and Reflect helps greatly in Zamazenta, Koraidon and Calyrex-Ice matchups. Both moves generally allow for your attackers to stick around longer and provide more value in each game. Foul Play is extremely useful for Calyrex matchups, non-Tera Calyrex-Shadow gets knocked out and Calyrex-Ice takes about 70-80%.}
-[p]{Ghost makes sense as the tera type of choice as you can block Fake Out, however this is not worth it in most matchups - But the pressure makes it worth running anyway. If you'd rather run a defensive type, Poison may be worth considering. You can also consider running Spirit Break with a careful spread instead - this helps more against Terapagos, Kyogre and Urshifu matchups but is more vulnerable to Intimidate and Parting Shot. Scary Face was considered in the Thunder Wave slot, to help with the Landorus matchup - However, Thunder Wave gives Grimmsnarl a field presence which forces the opponent to actively target it, and not just focus on the partner slot.}
+[p]{
+Grimmsnarl is one of the most important Pokemon on this team, even though it was added this late. 
+It can be used in almost every matchup, especially against Miraidon and Calyrex teams where survivability is extremely important. 
+Light screen allows Groudon to live a Draco Meteor from Choice Specs Miraidon, and Reflect helps greatly in Zamazenta, Koraidon and Calyrex-Ice matchups. 
+Both moves generally allow for your attackers to stick around longer and provide more value in each game. 
+Foul Play is extremely useful for Calyrex matchups, non-Tera Calyrex-Shadow gets knocked out and Calyrex-Ice takes about 70-80%.
+}
+[p]{
+Ghost makes sense as the tera type of choice as you can block Fake Out, however this is not worth it in most matchups - 
+But the pressure makes it worth running anyway. If you'd rather run a defensive type, Poison may be worth considering. 
+You can also consider running Spirit Break with a careful spread instead - this helps more against Terapagos, Kyogre and Urshifu matchups 
+but is more vulnerable to Intimidate and Parting Shot. Scary Face was considered in the Thunder Wave slot, to help with the Landorus matchup - 
+However, Thunder Wave gives Grimmsnarl a field presence which forces the opponent to actively target it, and not just focus on the partner slot.
+}
 [sh]{Farigiraf}
 [mon]{farigiraf}
 [code]{
@@ -113,12 +153,45 @@ Bold Nature
 [p]{The last Pokemon added to the team - Farigiraf was a key member which allowed for a Trick Room + Gravity gameplan which is great for game two mixups or Trick Room-weak matchups. This gamemode was generally weaker than the standard gameplan as it is hard to bring both Grimmsnarl and Farigiraf in the same match, and you often lose your Ogerpon to get Trick Room set up. However, Precipice Blades spam under Trick Room is very difficult to switch into with Gravity, as this provides perfect accuracy and the ability to hit flying types. Aside from the hard Trick Room gameplan, Farigiraf was useful to provide mindgame pressure against Fake Out heavy teams, as well as to pressure Foul Play against Calyrex-Shadow and Calyrex-Ice.}
 [h]{Common Leads}
 [sh]{Grimmsnarl + Groudon (Ogerpon + X)}
-[ul]{a,b,c,d,e}
+[ul]{
+Common lead for Miraidon, Calyrex-Ice, Koraidon, Terapagos and other teams without rain or Weezing
+Safe lead which allows you to set up screens and click Bulk Up or Precipice Blades
+"X" is usually Flutter Mane, however Raging Bolt is better for rain or Miraidon matchups and Farigiraf can be used as a mixup to block Fake Out.
+}
 [sh]{Grimmsnarl + Flutter Mane (Groudon + Ogerpon)}
+[ul]{
+Common lead for Calyrex-Shadow, Terapagos, Zamazenta, etc.
+Safe lead which allows you to set up screens, speed control so Groudon and Ogerpon can sweep
+Allows you to click Light Screen + Tera Fairy Moonblast into Calyrex-Shadow, which is a safe 2HKO. 
+}
 [sh]{Grimmsnarl + Ogerpon (Groudon + x)}
+[ul]{
+Lead for weather-based teams such as Calyrex-Ice + Pelipper, Kyogre, etc
+Allows you to hard swap to Groudon + Tera Fire Ivy Cudgel nuke a target
+Can also make more passive plays with Light Screen or Reflect + Spiky Shield, etc
+Against Scarf Urshifu teams with no Psychic Terrain or Farigiraf, you can Thunder Wave and Wood Hammer into Urshifu
+'X' is usually Flutter Mane, however Raging Bolt is better for rain or Miraidon matchups and Farigiraf can be used as a mixup to block Fake Out
+}
 [sh]{Grimmsnarl + Raging Bolt (Groudon + Ogerpon)}
+[ul]{
+Lead for Kyogre, other rain matchups
+Groudon can switch in and out to reset weather (Generally best not to set up)
+Ogerpon can come in lategame and KO grass Kyogre with Cudgel, or water Kyogre with Wood Hammer
+}
 [sh]{Ogerpon + Farigiraf (Groudon + X)}
+[ul]{
+Lead for Trick Room-weak teams, or as a Game 2 or 3 mixup
+Allows for Follow Me + Trick Room, ideally resulting in Ogerpon being knocked out
+Farigiraf can click Gravity to ensure Precipice Blades connects with flying types
+'X' is usually Flutter Mane, as it can come in and clean up once Trick Room ends. Against rain, Miraidon or Dondozo, Raging Bolt is preferred.
+}
 [sh]{Ogerpon + Groudon (X + Y)}
+[ul]{
+Lead for setup-weak teams, or as a Game 2 or 3 mixup
+Versatile lead which allows for immediate offense, or Follow Me + setup
+'X' is usually Grimmsnarl, however Farigiraf can be  also be used to set Trick Room after Ogerpon is knocked out
+'Y' is usually Flutter Mane, however Raging Bolt is better for rain or Miraidon matchups.
+}
 [h]{Conclusion}
 [p]{I wasn't expecting much from the team at first, but I ended up really liking it - So I decided to work on developing and improving the team before Brisbane. The matchup into standard Koraidon, Miraidon and Shadow-Rider teams felt very strong, and most other restricteds were at least playable. Unfortunately, a lot of the meta developments later in regulation G made this team much harder to use - common threats such as Landorus-I, Calyrex-Ice and Pelipper cause massive problems for the team, especially when used together. Groudon also has the inherent issue of Precipice Blades having imperfect accuracy, so that along with Thunder Wave can lose games under the wrong circumstances.}
 [p]{In the end, I was unable to use the team at regionals due to sickness - However I was able to get first, second and top four at different local tournaments during the season. I also reached 1600s in the best-of-one Showdown Ladder with the team, which has been pretty rare for me in previous formats. I'm unsure how well the team would have played into the metagame at Brisbane, but I worked hard on it and I'm really happy with how the team turned out.}
