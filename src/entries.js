@@ -1,8 +1,10 @@
 // Blog Entries
 const ENTRIES = [
   {
+    "id": "welcome", 
     "date": "2025-05-14",
     "title": "Welcome to my new blog!",
+    "tags": ["other"],
     "content": `
 [p]{
 Hey everyone! It has been about six years since I last wrote about Pokemon, but I've decided with my return to VGC I'd like to get back into writing as well. 
@@ -19,13 +21,28 @@ typos as I see them. At the moment I'm planning on writing team reports, season 
 `
   },
   {
+    "id": "groudon2025", 
     "date": "2025-04-21",
     "title": "Continental Heat Crash - A Groudonnieson Team Report",
+    "tags": ["team-report","2025-regg"],
     "content": `
-[p]{Hello everyone! My name is Damon, and I've been playing competitive Pokemon since 2015. I usually go by the name “SirScrubbington” or “Scrubbs” online, but on Pokemon Showdown I am known as “Jim's Esports”. I took a break from playing after Brisbane regionals 2024 due to burnout, but thanks to some of my friends I started to get back into playing late last year - towards the end of regulation H. I struggled to find a team I was comfortable with in that format, but with the return of the regulation G format from worlds last year I decided to pick one archetype and focus on it for the whole season.}
-[p]{When I started building my team, the Chinese Sun team was picking up in popularity - so I decided to try working with Groudon as my restricted. I've used Groudon at many tournaments over the years, both Primal and Non-Primal - So it's a Pokemon I felt very comfortable using.}
+[h]{Introduction}
+[p]{
+Hello everyone! My name is Damon, and I've been playing competitive Pokemon since 2015. I usually go by “SirScrubbington” or “Scrubbs” online, 
+but on Pokemon Showdown I am known as “Jim's Esports”. I took a break from playing after Brisbane regionals 2024 due to burnout, but thanks 
+to some of my friends I started to get back into playing towards the end of regulation H. I struggled to find a team I was comfortable with 
+in that format, but with the return of the regulation G format from worlds last year I decided to pick one archetype and focus on it for the whole season.
+}
+[p]{
+When I started building my team, the Chinese Sun team was picking up in popularity - so I decided to try working with Groudon as my restricted. 
+I've used Groudon at many tournaments over the years, both Primal and Non-Primal - So it's a Pokemon I felt very comfortable using.
+}
 [mon]{groudon,ogerpon-hearthflame,flutter-mane,raging-bolt,grimmsnarl,farigiraf}
 [paste]{https://pokepast.es/03a22d888c3014e8}
+[p]{
+I wasn't expecting much from the team at first, but I ended up really liking it - So I decided to work on developing and improving the team before Brisbane.
+The following section will break down the roles of each member of the team, as well as some core spread benchmarks.
+}
 [h]{Team Breakdown}
 [sh]{Groudon}
 [mon]{groudon}
@@ -40,7 +57,19 @@ Adamant Nature
 - Precipice Blades  
 - Heat Crash
 }
-[p]{Groudon is the core of the team - Precipice Blades is incredibly strong (as long as it hits) and sun-boosted Heat Crash deals base-120 power damage against most targets - An OHKO on almost any weakness (Except Calyrex-Ice), and even many neutral targets. Clear Amulet is an incredible item on Groudon, as it nullifies Intimidate and Parting Shot on Incineroar - Which was extremely annoying for Groudon in previous restricted formats. Tera Fire was chosen to block Will-o-Wisp, as well as further buffing the damage of Heat Crash. It also helps defensively against Ice, Grass and Fire moves. I tested several moves in the Bulk-Up slot including Swords Dance, High Horsepower and Stone Edge - But Bulk Up provided the best value in most matchups, especially against Zamazenta and Calyrex-Ice.}
+[ssh]{Notes}
+[ul]{
+Outspeeds nature-boosted base 100 speed Pokemon at -1 (Icy Wind)
+Outspeeds Calyrex-Shadow at -2 (Thunder Wave)
+}
+[p]{
+Groudon is the core of the team - Precipice Blades is incredibly strong (as long as it hits) and sun-boosted Heat Crash deals base-120 power damage
+against most targets - An OHKO on almost any weakness (Except Calyrex-Ice), and even many neutral targets. Clear Amulet is an incredible item on Groudon, 
+as it nullifies Intimidate and Parting Shot on Incineroar - Which was extremely annoying for Groudon in previous restricted formats. Tera Fire was chosen 
+to block Will-o-Wisp, as well as further buffing the damage of Heat Crash. It also helps defensively against Ice, Grass and Fire moves. I tested several 
+moves in the Bulk-Up slot including Swords Dance, High Horsepower and Stone Edge - But Bulk Up provided the best value in most matchups, especially against 
+Zamazenta and Calyrex-Ice.
+}
 [sh]{Ogerpon-Hearthflame}
 [mon]{ogerpon-hearthflame}
 [code]{
@@ -53,6 +82,10 @@ Adamant Nature
 - Follow Me  
 - Wood Hammer  
 - Ivy Cudgel
+}
+[ssh]{Notes}
+[ul]{
+Ceree's worlds spread, outspeeds Modest 252 Landorus-I.
 }
 [p]{
 I decided to pick Ogerpon-Hearthflame as the first partner for the team, due to the incredible synergy of Groudon's sun and Ogerpon's Ivy Cudgel. 
@@ -72,6 +105,12 @@ Timid Nature
 - Moonblast  
 - Icy Wind  
 - Taunt
+}
+[ssh]{Notes}
+[ul]{
+252+ Atk Urshifu-Rapid Strike Surging Strikes (3 hits) vs. 164 HP / 204 Def Flutter Mane on a critical hit: 126-153 (83.4 - 101.3%) -- 0.17% chance to OHKO
+252+ Atk Urshifu-Single Strike Wicked Blow vs. 164 HP / 204 Def Flutter Mane on a critical hit: 127-150 (84.1 - 99.3%) -- guaranteed 2HKO
+Outspeeds every Pokemon in the format, except for faster Flutter Mane and Iron Bundle.
 }
 [p]{
 Flutter Mane was the third Pokemon added to the team, as it has great synergy with Protosynthesis and Icy Wind for speed control. 
@@ -95,6 +134,10 @@ IVs: 20 Atk
 - Thunderbolt  
 - Draco Meteor  
 - Thunderclap
+}
+[ssh]{Notes}
+[ul]{
+Outspeeds Modest 252 Pelipper
 }
 [p]{
 Raging Bolt makes a lot of sense on the team with Life Orb as it helps greatly with rain matchups, and can provide a Draco Meteor nuke in other matchups. 
@@ -123,6 +166,12 @@ IVs: 0 Atk
 - Thunder Wave  
 - Reflect 
 }
+[ssh]{Notes}
+[ul]{
+252+ Atk Tera-Water Urshifu-Rapid Strike Surging Strikes (3 hits) vs. 228 HP / 156 Def Grimmsnarl on a critical hit: 168-198 (84.4 - 99.4%) -- guaranteed 2HKO
+252 SpA Flutter Mane Moonblast vs. 228 HP / 116+ SpD Grimmsnarl: 168-198 (84.4 - 99.4%) -- guaranteed 2HKO
+Outspeeds Adamant 252 Urshifu at -2 (Thunder Wave)
+}
 [p]{
 Grimmsnarl is one of the most important Pokemon on this team, even though it was added this late. 
 It can be used in almost every matchup, especially against Miraidon and Calyrex teams where survivability is extremely important. 
@@ -150,13 +199,25 @@ Bold Nature
 - Foul Play  
 - Psychic 
 }
-[p]{The last Pokemon added to the team - Farigiraf was a key member which allowed for a Trick Room + Gravity gameplan which is great for game two mixups or Trick Room-weak matchups. This gamemode was generally weaker than the standard gameplan as it is hard to bring both Grimmsnarl and Farigiraf in the same match, and you often lose your Ogerpon to get Trick Room set up. However, Precipice Blades spam under Trick Room is very difficult to switch into with Gravity, as this provides perfect accuracy and the ability to hit flying types. Aside from the hard Trick Room gameplan, Farigiraf was useful to provide mindgame pressure against Fake Out heavy teams, as well as to pressure Foul Play against Calyrex-Shadow and Calyrex-Ice.}
+[ssh]{Notes}
+[ul]{
+164+ Atk Calyrex-Ice Rider Glacial Lance vs. 220 HP / 172+ Def Farigiraf: 93-111 (41.7 - 49.7%) -- guaranteed 3HKO
+252+ Atk Sword of Ruin Tera-Water Urshifu-Rapid Strike Surging Strikes (3 hits) vs. 220 HP / 172+ Def Farigiraf on a critical hit: 186-222 (83.4 - 99.5%) -- guaranteed 2HKO 
+Outspeeds Jolly 252 Urshifu at -2 (Thunder Wave)
+}
+[p]{
+The last Pokemon added to the team - Farigiraf was a key member which allowed for a Trick Room + Gravity gameplan which is great for game two mixups or 
+Trick Room-weak matchups. This gamemode was generally weaker than the standard gameplan as it is hard to bring both Grimmsnarl and Farigiraf in the same 
+match, and you often lose your Ogerpon to get Trick Room set up. However, Precipice Blades spam under Trick Room is very difficult to switch into with 
+Gravity, as this provides perfect accuracy and the ability to hit flying types. Aside from the hard Trick Room gameplan, Farigiraf was useful to provide 
+mindgame pressure against Fake Out heavy teams, as well as to pressure Foul Play against Calyrex-Shadow and Calyrex-Ice.
+}
 [h]{Common Leads}
 [sh]{Grimmsnarl + Groudon (Ogerpon + X)}
 [ul]{
 Common lead for Miraidon, Calyrex-Ice, Koraidon, Terapagos and other teams without rain or Weezing
 Safe lead which allows you to set up screens and click Bulk Up or Precipice Blades
-"X" is usually Flutter Mane, however Raging Bolt is better for rain or Miraidon matchups and Farigiraf can be used as a mixup to block Fake Out.
+'X' is usually Flutter Mane, however Raging Bolt is better for rain or Miraidon matchups and Farigiraf can be used as a mixup to block Fake Out.
 }
 [sh]{Grimmsnarl + Flutter Mane (Groudon + Ogerpon)}
 [ul]{
@@ -193,7 +254,12 @@ Versatile lead which allows for immediate offense, or Follow Me + setup
 'Y' is usually Flutter Mane, however Raging Bolt is better for rain or Miraidon matchups.
 }
 [h]{Conclusion}
-[p]{I wasn't expecting much from the team at first, but I ended up really liking it - So I decided to work on developing and improving the team before Brisbane. The matchup into standard Koraidon, Miraidon and Shadow-Rider teams felt very strong, and most other restricteds were at least playable. Unfortunately, a lot of the meta developments later in regulation G made this team much harder to use - common threats such as Landorus-I, Calyrex-Ice and Pelipper cause massive problems for the team, especially when used together. Groudon also has the inherent issue of Precipice Blades having imperfect accuracy, so that along with Thunder Wave can lose games under the wrong circumstances.}
+[p]{
+The matchup into standard Koraidon, Miraidon and Shadow-Rider teams felt very strong, and most other restricteds were at least playable. Unfortunately, 
+a lot of the meta developments later in regulation G made this team much harder to use - common threats such as Landorus-I, Calyrex-Ice and Pelipper 
+cause massive problems for the team, especially when used together. Groudon also has the inherent issue of Precipice Blades having imperfect accuracy, 
+so that along with Thunder Wave can lose games under the wrong circumstances.
+}
 [p]{In the end, I was unable to use the team at regionals due to sickness - However I was able to get first, second and top four at different local tournaments during the season. I also reached 1600s in the best-of-one Showdown Ladder with the team, which has been pretty rare for me in previous formats. I'm unsure how well the team would have played into the metagame at Brisbane, but I worked hard on it and I'm really happy with how the team turned out.}
 [p]{It was satisfying to work on one team for the whole season, but I did miss playing around with different teams - So I'm planning to try and find a balance between the two in the next format. I've been having a lot of fun with Zacian/Kyogre so far, but I'm also keeping my eye on Calyrex-Shadow/Zamazenta and Calyrex-Ice/Miraidon. Double-restricted formats generally allow for much more versatility than single-restricted, so I'm keen to see what teams become popular over the next few months.}
 [p]{I really want to thank everyone in the Brisbane VGC community for making me feel welcome, a lot of things have changed over the years but we have always had an extremely friendly and strong local community. I also want to thank the Pokemon Showdown VGC room, I've met some amazing people in there and I've had a lot of fun playing in tournaments, for both old and new formats. I will not be travelling for regionals this year, but I may consider competing more seriously in the 2026 season - at the moment I'm happy to keep doing my best at locals, one event at a time.}
@@ -202,8 +268,10 @@ Versatile lead which allows for immediate offense, or Follow Me + setup
 `
   },
   {
+    "id": "season2019", 
     "date": "2019-09-01",
     "title": "SirScrubbington's VGC 2019 Moon and Worlds Ultra Report",
+    "tags": ["season-report", "2019-moon", "2019-sun"],
     "content": `
 [p]{Hey guys! It's been about three months since I posted anything here, and I felt like after worlds and my draft leagues had finished it was time to upload my moon and ultra series team report. After a strong Sun Series showing, my Moon and Ultra series results are not nearly as impressive. However, I still earned my worlds invite and worked hard to earn the best results I could at the tournaments I played, and had a lot of fun teambuilding for both formats. This article will go through all of the tournaments I played since the start of Moon series, through to Ultra Series and up to the Pokemon World Championships in Washington DC, which was held on the 16th to the 18th of September, 2019.}
 [h]{Tournaments}
@@ -264,7 +332,7 @@ Versatile lead which allows for immediate offense, or Follow Me + setup
 [ssh]{August 16th, 2019 - Pokemon World Championships - Day One - (4-5 Finish)}
 [mon]{kyogre-primal,xerneas,kangaskhan-mega,incineroar,amoonguss,tornadus}
 [p]{In the end, I decided on using Calvin's which he sent to me in the week before the tournament, after we discussed what we expected to be common at worlds and that my Lunala Xerneas team really just wasn't performing consistently enough for me to feel comfortable using it at worlds. Calvin had recently used this team to win two online Nintendo Switch invitational tournaments, and it met all of the requirements for a team I was comfortable using going into worlds - I just wanted to use a team which had Incineroar, Amoonguss and Xerneas as I felt I was best practised with those Pokemon and could play with them more consistently than any other core.}
-[p]{I spent the week before the tournament practising with this team as much as possible, as well as interacting with the discord where I could to learn how to play the team before the world championships. When it came to the actual tournament, I had a really good start, beating a Japanese XernDon player and then winning against @Redo_VGC who was piloting Xerneas Yveltal Metagross. In round three, I played versus RedSilver who was piloting XernDon Torn Kang, which was a favourable matchup for the team however I got very unlucky in games one and three to lose the set. From then on, my luck didn't get a whole lot better where I lost to Zhengle Tu's Haze Light Screen Madness Tapu Fini on XernDon, which I was not able to break with the core and then Uncle Lou's Rayquaza Lunala team after missing a single target Origin Pulse on his Stakataka game three for the set. From then on I did my best to win out, as I did not want to drop from my first world championships and was chasing the x-3 run however I lost again to LunaDon and XernDon in rounds 5 and 9 respectively.}
+[p]{I spent the week before the tournament practising with this team as much as possible, as well as interacting with the discord where I could to learn how to play the team before the world championships. When it came to the actual tournament, I had a really good start, beating a Japanese XernDon player and then winning against Redo_VGC who was piloting Xerneas Yveltal Metagross. In round three, I played versus RedSilver who was piloting XernDon Torn Kang, which was a favourable matchup for the team however I got very unlucky in games one and three to lose the set. From then on, my luck didn't get a whole lot better where I lost to Zhengle Tu's Haze Light Screen Madness Tapu Fini on XernDon, which I was not able to break with the core and then Uncle Lou's Rayquaza Lunala team after missing a single target Origin Pulse on his Stakataka game three for the set. From then on I did my best to win out, as I did not want to drop from my first world championships and was chasing the x-3 run however I lost again to LunaDon and XernDon in rounds 5 and 9 respectively.}
 [p]{I felt that Calvin's team was really good, and by no means regretted using it however I felt that after my initial loss, a lot of things which I couldn't control went against me to lose out of the tournament. It's always possible to look back and think that there were things I could have done differently to prevent it, and in this case there was at least one play I could have made which would have changed a game I lost. However, for the most part I felt that I played the best I could have given my circumstances in the tournament. For my first worlds, it was an eye-opening experience to the calibre of play I should come to expect from a high level tournament such as worlds, and showed me that I still have room to improve if I want to become a top level player.}
 [ssh]{August 17th, 2019 - Washington DC Open - (1-2 Drop)}
 [mon]{groudon-primal,xerneas,kangaskhan-mega,amoonguss,tornadus,kommo-o}
@@ -277,26 +345,60 @@ Versatile lead which allows for immediate offense, or Follow Me + setup
 `
   }, 
   {
+    "id": "season2016", 
     "date":  "2019-05-30",
     "title": "SirScrubbington's VGC 2016 Format Report",
+    "tags": ["season-report", "vgc2016", "vgc2015"],
     "content": `
 [h]{Foreword}
-[p]{Hey all, I've recently discovered this report which I had almost written and published to my blog back in 2016 however it was forgotten and never uploaded. Unfortunately many pastebins have been lost in the past three years, so I've attempted to recover as many as possible without recreating them unauthentically. In additon to this, I've tried to more or less leave it as it was as it's an interesting reflection of my mindset as a player back when it was written. However, I've had to rewrite the regionals and nationals sections as they pointed towards a Nugget Bridge report I wrote using the blog system that is no longer accessible. Regardless, I hope you can find some interest in this report and I'd like it to be seen as a kind of time capsule for my development as a player in the later sections, potentially for the format itself.}
+[p]{
+Hey all, I've recently discovered this report which I had almost written and published to my blog back in 2016 however it was forgotten and never uploaded. 
+Unfortunately many pastebins have been lost in the past three years, so I've attempted to recover as many as possible without recreating them unauthentically. 
+In additon to this, I've tried to more or less leave it as it was as it's an interesting reflection of my mindset as a player back when it was written. However, 
+I've had to rewrite the regionals and nationals sections as they pointed towards a Nugget Bridge report I wrote using the blog system that is no longer accessible. 
+Regardless, I hope you can find some interest in this report and I'd like it to be seen as a kind of time capsule for my development as a player in the later sections, 
+potentially for the format itself.
+}
 [h]{Introduction}
-[p]{Hey guys! 2016 has been an incredibly big year for me as a Pokemon player, I've met a lot of amazing players at events, completely outperformed my expectations and I've honestly had a pretty fantastic time playing the 2016 format, which is something I would have never  expected to say during the first few months of the format. 2016 was my first full year playing VGC, as I started in around March of 2015 and was also my first year attending the National Championships in Melbourne - Which had really been a huge goal for me since I'd started playing. In this report I'll be going through my tournament season, as well as a few teams I made on the side which never got to see play at a tournament. Thanks for reading, and I hope you all enjoy the report!}
+[p]{
+Hey guys! 2016 has been an incredibly big year for me as a Pokemon player, I've met a lot of amazing players at events, completely outperformed my expectations and 
+I've honestly had a pretty fantastic time playing the 2016 format, which is something I would have never  expected to say during the first few months of the format. 
+2016 was my first full year playing VGC, as I started in around March of 2015 and was also my first year attending the National Championships in Melbourne - Which 
+had really been a huge goal for me since I'd started playing. In this report I'll be going through my tournament season, as well as a few teams I made on the side 
+which never got to see play at a tournament. Thanks for reading, and I hope you all enjoy the report!
+}
 [h]{Early Season Testing}
-[p]{The 2016 format was announced early on in November 2015, which gave me about 3 weeks to prepare teams before the Nuggetbridge Summer Scramble was announced. My first impression of this format was that Shadow Tag was really good, so I attempted to use Gothitelle to make a Dual Primal trick room team.}
+[p]{
+The 2016 format was announced early on in November 2015, which gave me about 3 weeks to prepare teams before the Nuggetbridge Summer Scramble was announced. 
+My first impression of this format was that Shadow Tag was really good, so I attempted to use Gothitelle to make a Dual Primal trick room team.
+}
 [sh]{NB Summer Scramble (1-x)}
 [mon]{kyogre-primal,groudon-primal,kangaskhan-mega,tornadus,gothitelle,ferrothorn}
-[p]{My general gameplan was to use either Kyogre or Groudon depending on which primal my opponent was using, or both in certain matchups. I based the team off Scar's Team in the Battle of Legends, as I used the same 5 pokemon as him with Gothitelle over Cresselia. My version of the team was really awful, and I ended up doing really badly in the scramble but I feel this tournament and my performance helped me get used to the format and the kind of play required to be successful in 2016.}
+[p]{
+My general gameplan was to use either Kyogre or Groudon depending on which primal my opponent was using, or both in certain matchups. I based the team off Scar's 
+Team in the Battle of Legends, as I used the same 5 pokemon as him with Gothitelle over Cresselia. My version of the team was really awful, and I ended up doing 
+really badly in the scramble but I feel this tournament and my performance helped me get used to the format and the kind of play required to be successful in 2016.
+}
 [sh]{Aus VS. Malaysia Qualifier (0-1)}
 [mon]{xerneas,kyogre-primal,salamence-mega,weavile,gothitelle,ferrothorn}
-[p]{Looking back at this team, I see that Bronzong would have been a fantastic Pokemon choice over Gothitelle, but at the time I simply had Gothitelle because I wasn't sure what else I wanted and Bronzong hadn't really picked up in the metagame yet. It would have made the team better in so many matchups and I truly regret not trying it.}
+[p]{
+Looking back at this team, I see that Bronzong would have been a fantastic Pokemon choice over Gothitelle, but at the time I simply had Gothitelle because I wasn't 
+sure what else I wanted and Bronzong hadn't really picked up in the metagame yet. It would have made the team better in so many matchups and I truly regret not trying it.
+}
 [sh]{International Challenge January (Top 10 Australia)}
 [mon]{xerneas,groudon-primal,kangaskhan-mega,salamence-mega,talonflame,smeargle}
-[p]{After losing so easily I was pretty demoralised, so Luke Brown convinced me to try a more standard team with Scarfed smeargle and Quick Guard Talonflame. I ended up using this team in the International Challenge, and just barely made 10th in Australia. Early in the metagame these teams were decent, but more or less relied entirely on hitting dark void and getting good sleep turns to position yourself, which I considered to be very inconsistent and unreliable in the long run. I hated relying on that to win games so I changed this team pretty quickly after the tournament.}
+[p]{
+After losing so easily I was pretty demoralised, so Luke Brown convinced me to try a more standard team with Scarfed smeargle and Quick Guard Talonflame. 
+I ended up using this team in the International Challenge, and just barely made 10th in Australia. Early in the metagame these teams were decent, 
+but more or less relied entirely on hitting dark void and getting good sleep turns to position yourself, which I considered to be very inconsistent 
+and unreliable in the long run. I hated relying on that to win games so I changed this team pretty quickly after the tournament.
+}
 [sh]{Nugget Bridge Major (4-5)}
-[p]{Unfortunately it is impossible for me to retrieve my team and matchup combinations due to the Nugget Bridge forums deletion, I can give a basic rundown of the opponents I faced and how I fared in the tournament. For most of the tournament I used fairly standard Big Six variants, teching in new moves and Pokemon occasionally but for the most part my team remained the same each week.}
+[p]{
+Unfortunately it is impossible for me to retrieve my team and matchup combinations due to the Nugget Bridge forums deletion, I can give a basic rundown 
+of the opponents I faced and how I fared in the tournament. For most of the tournament I used fairly standard Big Six variants, teching in new moves 
+and Pokemon occasionally but for the most part my team remained the same each week.
+}
 [ssh]{Round 1 - ReuvenVGC (win)}
 [ssh]{Round 2 - CYGC (loss)}
 [ssh]{Round 3 - KingWill53 (loss)}
@@ -306,105 +408,270 @@ Versatile lead which allows for immediate offense, or Follow Me + setup
 [ssh]{Round 7 - LPFanVGC (loss)}
 [ssh]{Round 8 - HaxnandezTH (win)}
 [ssh]{Round 9 - PephanVGC (loss)}
-[p]{Finishing the Nugget Bridge Major with a negative record was a little bit demoralising, however it was only early on during the season and I can recognise that most of the opponents which I lost to were skilled players. Regardless of my performance, it was a good opportunity to learn more about the format and improve my skill level against international opponents.}
+[p]{
+Finishing the Nugget Bridge Major with a negative record was a little bit demoralising, however it was only early on during the season and I can recognise that 
+most of the opponents which I lost to were skilled players. Regardless of my performance, it was a good opportunity to learn more about the format and improve 
+my skill level against international opponents.
+}
 [sh]{Brisbane Premier Challenge #1 (2-3)}
 [mon]{xerneas,groudon-primal,kangaskhan-mega,salamence-mega,talonflame,smeargle}
-[p]{This was the first live event of the format for me, and I used a modified version of my international challenge team which dropped the scarf on smeargle for Sash, and I actually ran feint as a tech move for beating opposing smeargles. My justification for this was that feint + Brave Bird would be able to KO any opposing smeargles, although I found that Smeargle + Talonflame was a very passive lead against any team that did not lead smeargle themselves. I also used Flamethrower + Eruption special Groudon, which was good in some matchups but during the event I got paired against a Ho-Oh team piloted by Mastodon - Which fairly well destroyed me. He also managed to sheer cold my Geo'd Xerneas on the first attempt which did a pretty good job at tilting me going into the next round, where I lost to Boomguy's RayOgre team with Roar Zapdos after a double dark void miss.}
+[p]{
+This was the first live event of the format for me, and I used a modified version of my international challenge team which dropped the scarf on smeargle for Sash, 
+and I actually ran feint as a tech move for beating opposing smeargles. My justification for this was that feint + Brave Bird would be able to KO any opposing 
+smeargles, although I found that Smeargle + Talonflame was a very passive lead against any team that did not lead smeargle themselves. I also used Flamethrower + 
+Eruption special Groudon, which was good in some matchups but during the event I got paired against a Ho-Oh team piloted by Mastodon - Which fairly well destroyed 
+me. He also managed to sheer cold my Geo'd Xerneas on the first attempt which did a pretty good job at tilting me going into the next round, where I lost to Boomguy's 
+RayOgre team with Roar Zapdos after a double dark void miss.
+}
 [sh]{Brisbane Premier Challenge #2 (Top 4)}
 [mon]{xerneas,groudon-primal,kangaskhan-mega,salamence-mega,talonflame,smeargle}
-[p]{This tournament I used practically the exact same team, as I'd been testing a lot of teams online but I wasn't really satisfied with any of them. The only massive difference I can remember between them was that in this tournament my Primal Groudon had rock slide - literally just because I didn't want to lose to Mastodon's Ho-Oh again. I made the horrible decision of using a special defence reducing nature, which made my Groudon get easily 2hkod by Salamence and realised the day after the event that Groudon actually got Ancient Power which I could have used instead. I also discovered a few weeks after the event that I wasn't actually running max happiness on my return Kangaskhan - I was starting to wonder why my return wasn't even strong enough to kill Talonflame at neutral. I lost in Top 4 to Boomguy, who was using a Cresselia Big 6 team which I really liked the look of and began testing with after the event.}
+[p]{
+This tournament I used practically the exact same team, as I'd been testing a lot of teams online but I wasn't really satisfied with any of them. The only massive 
+difference I can remember between them was that in this tournament my Primal Groudon had rock slide - literally just because I didn't want to lose to Mastodon's 
+Ho-Oh again. I made the horrible decision of using a special defence reducing nature, which made my Groudon get easily 2hkod by Salamence and realised the day 
+after the event that Groudon actually got Ancient Power which I could have used instead. I also discovered a few weeks after the event that I wasn't actually 
+running max happiness on my return Kangaskhan - I was starting to wonder why my return wasn't even strong enough to kill Talonflame at neutral. I lost in 
+Top 4 to Boomguy, who was using a Cresselia Big 6 team which I really liked the look of and began testing with after the event.
+}
 [sh]{Brisbane Premier Challenge #3 (Winner)}
 [mon]{xerneas,groudon-primal,kangaskhan-mega,cresselia,talonflame,smeargle}
-[p]{I had planned on bringing a RayOgre team to this tournament, but after testing and refining the Trick Room Big 6 Cresselia online, I found I really enjoyed using it and decided to bring it to the PC. The team proved really consistent in swiss, and I felt like I had answers for pretty much everything I faced during the day. I played against Luke Milligan (Pidgey) in the finals, who was one of my swiss losses but after careful consideration of my game plan I was able to take the finals set 2-0. This was also the first tournament where I met Malcolm (MogarVGC), a skilled VGC player who has become a good friend of mine since the event.}
+[p]{
+I had planned on bringing a RayOgre team to this tournament, but after testing and refining the Trick Room Big 6 Cresselia online, I found I really enjoyed 
+using it and decided to bring it to the PC. The team proved really consistent in swiss, and I felt like I had answers for pretty much everything I faced 
+during the day. I played against Luke Milligan (Pidgey) in the finals, who was one of my swiss losses but after careful consideration of my game plan 
+I was able to take the finals set 2-0. This was also the first tournament where I met Malcolm (MogarVGC), a skilled VGC player who has become a good 
+friend of mine since the event.
+}
 [sh]{Brisbane Regionals (Top 8)}
 [mon]{xerneas,groudon-primal,kangaskhan-mega,cresselia,talonflame,smeargle}
-[p]{For this event, I don't think there was ever very much doubt in my mind that I was going to bring Cresselia Big 6. The team provided strong neutral matchups across the board, and having a trick room mode with slow Groudon ensured that I would have a playable matchup against other trick room primal teams.}
-[p]{This was a best of one swiss regional with a best of three top cut, and I felt like this was of benefit to a less standard Xerneas Groudon team as my opponents may not have a specific gameplan. In this event I went 7-1 in swiss, which was absolutely necessary for me to top cut as I had the worst resistance of any other player in the top cut of that event. This is due to the fact that I lost my games extremely early, and my round one opponent dropped round two, forfieting to me after winning. This was not something I did not nor would ask for, and felt really uncomfortable about it for the rest of the event but I guess in the end, it determined me to play strong into top cut so to that much I am thankful for.}
-[p]{I lost to Mitch Kendrick (@MitchVGC) in Top 8, as I didn't have a well defined gameplan against Kyogre Xerneas. Game one, I lead in such a way that allowed me to be susceptible to the Smeargle Xerneas flowchart, which was regrettable as I did not predict the lead as I should have. Game two I switched up my leads to provide a stronger matchup, and my Groudon win condition took a critical hit which cost me any chance of taking the match.}
+[p]{
+For this event, I don't think there was ever very much doubt in my mind that I was going to bring Cresselia Big 6. The team provided strong neutral 
+matchups across the board, and having a trick room mode with slow Groudon ensured that I would have a playable matchup against other trick room primal teams.
+}
+[p]{
+This was a best of one swiss regional with a best of three top cut, and I felt like this was of benefit to a less standard Xerneas Groudon team as my opponents 
+may not have a specific gameplan. In this event I went 7-1 in swiss, which was absolutely necessary for me to top cut as I had the worst resistance of any 
+other player in the top cut of that event. This is due to the fact that I lost my games extremely early, and my round one opponent dropped round two, 
+forfieting to me after winning. This was not something I did not nor would ask for, and felt really uncomfortable about it for the rest of the event 
+but I guess in the end, it determined me to play strong into top cut so to that much I am thankful for.
+}
+[p]{
+I lost to Mitch Kendrick in Top 8, as I didn't have a well defined gameplan against Kyogre Xerneas. Game one, I lead in such a way that allowed me to 
+be susceptible to the Smeargle Xerneas flowchart, which was regrettable as I did not predict the lead as I should have. Game two I switched up my 
+leads to provide a stronger matchup, and my Groudon win condition took a critical hit which cost me any chance of taking the match.
+}
 [sh]{Australian Nationals (Top 8)}
-[p]{Australian nationals was held the week after my first semester at University ended - So I was extremely busy with work and didn't really have any time to test new teams for the tournament as I would have liked to. Up until the night before the main event started, I had every intention of playing the tournament using a slightly modified version of my regionals team, with a more offensive, slower Xerneas EV spread and a few more optimised EV spreads elsewhere.}
+[p]{
+Australian nationals was held the week after my first semester at University ended - So I was extremely busy with work and didn't really have any 
+time to test new teams for the tournament as I would have liked to. Up until the night before the main event started, I had every intention 
+of playing the tournament using a slightly modified version of my regionals team, with a more offensive, slower Xerneas EV spread and a 
+few more optimised EV spreads elsewhere.
+}
 [mon]{xerneas,groudon-primal,kangaskhan-mega,cresselia,talonflame,smeargle}
-[p]{The Xerneas EV spread change was due to the general increase in bulk on opposing Xerneas in this point in the metagame, as my low investment and neutral nature on my regionals Xerneas meant that I was no longer picking up non-Geo'd Xerneas with Moonblast. When this became an issue, there was no way I could keep using my current spread. However, after testing this team on Battle Spot the night before the event, I was unsatisfied with my losses and felt that I was playing a number of teams which I was incapable of beating consistently, so I cut Cresselia for Salamence and switched to fast Groudon.}
+[p]{
+The Xerneas EV spread change was due to the general increase in bulk on opposing Xerneas in this point in the metagame, as my low investment 
+and neutral nature on my regionals Xerneas meant that I was no longer picking up non-Geo'd Xerneas with Moonblast. When this became an issue, 
+there was no way I could keep using my current spread. However, after testing this team on Battle Spot the night before the event, I was 
+unsatisfied with my losses and felt that I was playing a number of teams which I was incapable of beating consistently, so I cut Cresselia 
+for Salamence and switched to fast Groudon.
+}
 [mon]{xerneas,groudon-primal,kangaskhan-mega,salamence-mega,talonflame,smeargle}
 [paste]{https://pokepast.es/09cbe17944d7119a}
-[p]{This is the standard, full Big Six team which I felt was experienced enough with to play most matchups and at least understand my win conditions, especially in a best of three set. The main problem with using a team like this at regionals or other smaller events in my mind was that it was easily understood by my opponents, and weak to being teched against in best of one. However, I felt that in a best of three scenario I could play around most techs as they are revealed and using a team with consistent neutral to favourable matchups was acceptable.}
-[p]{I ended up going 7-2 in swiss at this national with my team, taking losses to Sam Hughes (@Sammy_Slug) in round four and Mitch Kendrick (@MitchVGC) in round six. Sam was using Rayquaza Kyogre Ferrothorn, which is a difficult matchup for my team and he outplayed me convincingly in game three, and Mitch Kendrick was using Xerneas Groudon Bronzong, and his Smeargle worked well to make the set difficult for me to play. Another memorable match I played this day was Bailey Owen (@BargensVGC) in round three, which was one of the toughest sets I played all day, against who was at the time one of the strongest VGC players in Melbourne. He outplayed me extremely convincingly game one, however I was able to make a comeback in game two. Game three was an extremely close game, which I was able to bring into a winnable position by making a number of extremely aggressive plays and winning a Groudon speed tie.}
-[p]{This national was a two-day swiss event, where rounds eight and nine were played on day two, so going into day two with an x-2 record was probably one of the most nervewracking experiences of my life. However, on day two I was able to take wins against Jimmy Farrujia (@jfaybzplays) and Bailey Gabell (@BaileyGabell) who were both skilled players who forced me to play for my chances at top cut.}
-[p]{Jimmy was playing an extremely interesting archetype in Xerneas Yveltal, which was something I did not have matchup experience with and lost game two pretty convincingly, however I was able to take game three with the team weaknesses I had learned in games one and two. Bailey Gabell was piloting Rayquaza Kyogre, which was a difficult matchup however it was a more standard variant than Sam Hughes' version so I had a better understanding of the matchup and won 2-0. After going x-2 early, I was very nervous that my resistance would not hold up enough to get me a top cut spot, however I was lucky enough to make the Top 16 cut at 13th!}
-[p]{My top 16 opponent was Bailey Owen again, who was one of my most difficult games day one and I felt like his Crobat made the matchup a little bit unfavourable. After losing game one I made a punishable play in game two for which I was rewarded for with a critical hit and for him this was tilting enough for me to win game three without too much competition.}
-[p]{In top 8 my opponent was Sam Pandelis, a well-known Australian VGC player and a multiple time Australian regional champion. Due to the unfavourable setup of the invite structure in 2016, the low number of events in Australia made it extremely difficult for Australians to achieve travel awards to the World Championships, even with numerous good regional placings. As a result of this, myself (and a number of other people) threw matches in top cut of this national to ensure that those of us that could would get their paid invites. It was quite difficult for the stream team to show games, as for example in top eight there was only one set which was actually played.}
-[p]{This is something which for me was extremely dissapointing as it was an anticlimactic conclusion to one of my proudest achievements as a VGC player after a poor pre-season performance however the Top 4 placing was far more important to Sam than it was for me, as he needed it for his worlds invite and I had no chance of getting paid even with a win. Regardless of this, I was still very proud of my achievement and it felt amazing to make top cut at my first national and prove myself as a player in the Australian VGC scene.}
+[p]{
+This is the standard, full Big Six team which I felt was experienced enough with to play most matchups and at least understand my win conditions,
+especially in a best of three set. The main problem with using a team like this at regionals or other smaller events in my mind was that it 
+was easily understood by my opponents, and weak to being teched against in best of one. However, I felt that in a best of three scenario I 
+could play around most techs as they are revealed and using a team with consistent neutral to favourable matchups was acceptable.
+}
+[p]{
+I ended up going 7-2 in swiss at this national with my team, taking losses to Sam Hughes in round four and Mitch Kendrick in round six. 
+Sam was using Rayquaza Kyogre Ferrothorn, which is a difficult matchup for my team and he outplayed me convincingly in game three, and 
+Mitch Kendrick was using Xerneas Groudon Bronzong, and his Smeargle worked well to make the set difficult for me to play. Another 
+memorable match I played this day was Bailey Owen in round three, which was one of the toughest sets I played all day, against who 
+was at the time one of the strongest VGC players in Melbourne. He outplayed me extremely convincingly game one, however I was able 
+to make a comeback in game two. Game three was an extremely close game, which I was able to bring into a winnable position by making 
+a number of extremely aggressive plays and winning a Groudon speed tie.
+}
+[p]{
+This national was a two-day swiss event, where rounds eight and nine were played on day two, so going into day two with an x-2 record 
+was probably one of the most nervewracking experiences of my life. However, on day two I was able to take wins against Jimmy Farrujia 
+and Bailey Gabell who were both skilled players who forced me to play for my chances at top cut.
+}
+[p]{
+Jimmy was playing an extremely interesting archetype in Xerneas Yveltal, which was something I did not have matchup experience with 
+and lost game two pretty convincingly, however I was able to take game three with the team weaknesses I had learned in games one 
+and two. Bailey Gabell was piloting Rayquaza Kyogre, which was a difficult matchup however it was a more standard variant than Sam Hughes' 
+version so I had a better understanding of the matchup and won 2-0. After going x-2 early, I was very nervous that my resistance would 
+not hold up enough to get me a top cut spot, however I was lucky enough to make the Top 16 cut at 13th!
+}
+[p]{
+My top 16 opponent was Bailey Owen again, who was one of my most difficult games day one and I felt like his Crobat made the matchup a 
+little bit unfavourable. After losing game one I made a punishable play in game two for which I was rewarded for with a critical hit 
+and for him this was tilting enough for me to win game three without too much competition.
+}
+[p]{
+In top 8 my opponent was Sam Pandelis, a well-known Australian VGC player and a multiple time Australian regional champion. 
+Due to the unfavourable setup of the invite structure in 2016, the low number of events in Australia made it extremely 
+difficult for Australians to achieve travel awards to the World Championships, even with numerous good regional placings. 
+As a result of this, myself (and a number of other people) threw matches in top cut of this national to ensure that those 
+of us that could would get their paid invites. It was quite difficult for the stream team to show games, as for example 
+in top eight there was only one set which was actually played.
+}
+[p]{
+This is something which for me was extremely dissapointing as it was an anticlimactic conclusion to one of my proudest 
+achievements as a VGC player after a poor pre-season performance however the Top 4 placing was far more important to 
+Sam than it was for me, as he needed it for his worlds invite and I had no chance of getting paid even with a win. 
+Regardless of this, I was still very proud of my achievement and it felt amazing to make top cut at my first national 
+and prove myself as a player in the Australian VGC scene.
+}
 [sh]{Australian Pokemon League (3-1)}
-[p]{The Australian Pokemon League, or APL was one of the best experiences which I could have asked for as an early Australian VGC player, and it's something which I really hope comes back for future formats. I think it's an extremely useful tool for introducing new players to high level competitive play, and providing an opportunity for players to learn the value of group teambuilding and discussion despite the nature of Pokemon as an inherently one-versus-one game in terms of offical competitive formats.}
-[p]{I played almost every week for the Lumiose Mimes, which was an APL team captained by Phil Nguyen (@Aussie_Phil_N). At the start I was incredibly nervous, as I have trouble under pressure especially when there are more people than just myself relying on my results, which was something I was not used to I had an amazing team which I was happy to play for, and I think having the opportunity was a priceless experience for me. When playing in the APL, my matchups were as follows:}
+[p]{
+The Australian Pokemon League, or APL was one of the best experiences which I could have asked for as an early Australian VGC player, 
+and it's something which I really hope comes back for future formats. I think it's an extremely useful tool for introducing new players 
+to high level competitive play, and providing an opportunity for players to learn the value of group teambuilding and discussion despite 
+the nature of Pokemon as an inherently one-versus-one game in terms of offical competitive formats.
+}
+[p]{
+I played almost every week for the Lumiose Mimes, which was an APL team captained by Phil Nguyen. At the start I was incredibly nervous, 
+as I have trouble under pressure especially when there are more people than just myself relying on my results, which was something I was 
+not used to I had an amazing team which I was happy to play for, and I think having the opportunity was a priceless experience for me. 
+When playing in the APL, my matchups were as follows:
+}
 [ssh]{Week 1: Didn't Play}
-[p]{Unfortunately I had an assignment due this week which had to take priority over playing, but I promised Phil I'd play in the next week in whichever slot he preferred.}
+[p]{
+Unfortunately I had an assignment due this week which had to take priority over playing, but I promised Phil I'd play in the next week in whichever slot he preferred.
+}
 [ssh]{Week 2: (VGC16') - Rhydian Cowley}
 [p]{Me:}
 [mon]{xerneas,groudon-primal,kangaskhan-mega,talonflame,cresselia,smeargle}
 [p]{Rhydian:}
 [mon]{xerneas,groudon-primal,kangaskhan-mega,gengar-mega,thundurus,smeargle}
-[p]{This was actually a really fun set, and was our highlighted set for this week of the APL. Game one I was able to Smeargle Xerneas flowchart pretty safely, and game two I mixed up a little bit, however lategame I made a prediction based upon a move which Rhydian did not have so I ended up losing. Game three, I was able to get the fake out swords dance off freely, and through some faily shaky mindgames in the midsection I was able to close the game out with Groudon.}
+[p]{
+This was actually a really fun set, and was our highlighted set for this week of the APL. Game one I was able to Smeargle Xerneas flowchart pretty safely, 
+and game two I mixed up a little bit, however lategame I made a prediction based upon a move which Rhydian did not have so I ended up losing. Game three, 
+I was able to get the fake out swords dance off freely, and through some faily shaky mindgames in the midsection I was able to close the game out with Groudon.
+}
 [ssh]{Week 3: (VGC16') - Jay Tyrrel}
 [p]{Me:}
 [mon]{rayquaza-mega,kyogre-primal,gengar-mega,crobat,raichu,ferrothorn}
 [p]{Jay:}
 [mon]{groudon-primal,kyogre-primal,salamence-mega,gothitelle,raichu,ferrothorn}
-[p]{This was the week after Australian nationals, and as we were playing against Bargens' team I felt pretty certain they were just going to counterteam big six. The strongest big six counterteams are generally dual primal teams, so I felt like they were just going to abuse that matchup. As a result of this, I put together a powerful Rayquaza Kyogre team which in theory has an extremely favourable dual primal matchup and through a little bit of luck in game two I was able to take this set 2-0.}
+[p]{
+This was the week after Australian nationals, and as we were playing against Bargens' team I felt pretty certain they were just going to counterteam big six.
+The strongest big six counterteams are generally dual primal teams, so I felt like they were just going to abuse that matchup. As a result of this, I put 
+together a powerful Rayquaza Kyogre team which in theory has an extremely favourable dual primal matchup and through a little bit of luck in game two 
+I was able to take this set 2-0.
+}
 [ssh]{Week 4: (VGC15') - Sam Pandelis}
 [p]{Me:}
 [mon]{gardevoir-mega,landorus-therian,thundurus,heatran,amoonguss,azumarill}
 [paste]{https://pokepast.es/8af4c252c5e24445}
 [p]{Sam:}
 [mon]{kangaskhan-mega,talonflame,zapdos,bisharp,breloom,swampert}
-[p]{Sam is a good player, so this was an extremely stressful set to prepare for. I wasn't expecting him to counterteam me, as I wasn't particularly well known as a VGC15' player at this point in time so my tendency to use Gardevoir CHALK was most likely not known to him. On the other hand, I was expecting him to use a very offensive team so I had to prepare myself for the possibility of playing some pretty heavy mindgames. I got pretty heavily rolled over in game one, however in games two and three I was able to navigate through the onslaught of mindgames and take the set.}
+[p]{
+Sam is a good player, so this was an extremely stressful set to prepare for. I wasn't expecting him to counterteam me, as I wasn't particularly well 
+known as a VGC15' player at this point in time so my tendency to use Gardevoir CHALK was most likely not known to him. On the other hand, I was 
+expecting him to use a very offensive team so I had to prepare myself for the possibility of playing some pretty heavy mindgames. I got 
+pretty heavily rolled over in game one, however in games two and three I was able to navigate through the onslaught of mindgames and take the set.
+}
 [ssh]{Week 5: (VGC15') - Jerikho Bulandi}
 [p]{Me:}
 [mon]{charizard-mega-y,gengar-mega,landorus-therian,whimsicott,terrakion,milotic}
 [p]{Jerikho:}
 [mon]{kangaskhan-mega,landorus-therian,thundurus,heatran,amoonguss,sylveon}
-[p]{I didn't know too much about Jerikho, however I knew that Dawg had spent a good amount of money drafting him onto his team so I wasn't underestimating him. I decided against using my Gardevoir team again, as the other games which had been played already that week were mostly played using counterteams - so I decided to use a more experimental archetype in Charizard Y Gengar Whimsicott. It never really had a big performance at live events, but it popped up a little in the late season as a powerful Japanese Battle Spot archetype so I decided to give it a shot, as it had a reasonable matchup to standard teams. Overall I felt like I got a little unlucky in the set, but Jerikho played really well with a strong team so he won 2-0 pretty safely.}
+[p]{
+I didn't know too much about Jerikho, however I knew that Dawg had spent a good amount of money drafting him onto his team so I wasn't underestimating him. 
+I decided against using my Gardevoir team again, as the other games which had been played already that week were mostly played using counterteams - so I 
+decided to use a more experimental archetype in Charizard Y Gengar Whimsicott. It never really had a big performance at live events, but it popped up 
+a little in the late season as a powerful Japanese Battle Spot archetype so I decided to give it a shot, as it had a reasonable matchup to standard 
+teams. Overall I felt like I got a little unlucky in the set, but Jerikho played really well with a strong team so he won 2-0 pretty safely.
+}
 [sh]{BSPL}
-[p]{The BSPL, or Battle Spot Premier League was another draft league I signed up for which was based around Generation five and six Battle Spot Formats - Including Battle Spot Doubles, otherwise known as VGC2015. This meant that a lot of VGC players wanting a break from the power-heavy format of VGC2016 signed up to have a chance to play for the doubles matches. I played for the Viridian Rhydons, which was a really fun team to play on which also featured my good friend, Brendan  Webb (@FloristTheBudew) as another doubles player. This league, while similar in structure was a very different experience for me than the APL, as I was placed on a team of Pokemon players from all over the world, all involved with different Pokemon formats - Including Battle Spot Singles, and even GBU Singles! It was a really great opportunity for me to play some really great matches, which were as follows.}
-[ssh]{Week 1: Bailey Owen (@BargensVGC)}
+[p]{
+The BSPL, or Battle Spot Premier League was another draft league I signed up for which was based around Generation five and six Battle Spot Formats - 
+Including Battle Spot Doubles, otherwise known as VGC2015. This meant that a lot of VGC players wanting a break from the power-heavy format of 
+VGC2016 signed up to have a chance to play for the doubles matches. I played for the Viridian Rhydons, which was a really fun team to play 
+on which also featured my good friend, Brendan Webb as another doubles player. This league, while similar in structure was a very different 
+experience for me than the APL, as I was placed on a team of Pokemon players from all over the world, all involved with different Pokemon 
+formats - Including Battle Spot Singles, and even GBU Singles! It was a really great opportunity for me to play some really great matches, which were as follows.
+}
+[ssh]{Week 1: Bailey Owen}
 [p]{Me:}
 [mon]{salamence-mega,weavile,arcanine,aegislash,breloom,azumarill}
 [paste]{https://pokepast.es/ca97d5fc3e85eb0a}
 [p]{Bailey:}
 [mon]{kangaskhan-mega,charizard-mega-y,landorus-therian,heatran,amoonguss,milotic}
-[p]{As you've probably seen from elsewhere in this report, Bailey and I played quite a lot of times this year so I felt like he'd know me pretty well and decide to counter my standard Gardevour CHALK team. As a result of this, I was a little bit lost on which team choice to pick so I ended up going with a HyperOffense team which I built in mid 2015 after a practise set with Jack Buckley (@Arahpthos) renewed my confidence in it. My team had an extremely favourable matchup to his self-admitted Gardevoir counterteam, so I was able to win two fairly clean games, with game two being a little bit messier after a scald burn on his end and a high low kick roll on mine.}
-[ssh]{Week 2: Kimo Nishimira (@TapuKimo)}
+[p]{
+As you've probably seen from elsewhere in this report, Bailey and I played quite a lot of times this year so I felt like he'd know me pretty
+well and decide to counter my standard Gardevour CHALK team. As a result of this, I was a little bit lost on which team choice to pick so 
+I ended up going with a HyperOffense team which I built in mid 2015 after a practise set with Jack Buckley renewed my confidence in it. 
+My team had an extremely favourable matchup to his self-admitted Gardevoir counterteam, so I was able to win two fairly clean games, 
+with game two being a little bit messier after a scald burn on his end and a high low kick roll on mine.
+}
+[ssh]{Week 2: Kimo Nishimira}
 [p]{Me:}
 [mon]{salamence-mega,weavile,arcanine,aegislash,breloom,azumarill}
 [paste]{https://pokepast.es/ca97d5fc3e85eb0a}
 [p]{Kimo:}
 [mon]{kangaskhan-mega,landorus-therian,thundurus,aegislash,amoonguss,azumarill}
-[p]{After the success of the team last week, I decided I'd try using the same team this week as well. While I am more of a defensive player generally, as it allows you to make safer plays and still win I felt that this team allowed me to take games off highly skilled players if I were able to predict them accurately. However, Iost this set 2-0 from Kimo as he played extremely well, and despite the fact I was able to make the correct read and eliminate his Thundurus both times he was able to win the war of attrition and take both games.}
+[p]{
+After the success of the team last week, I decided I'd try using the same team this week as well. While I am more of a defensive player 
+generally, as it allows you to make safer plays and still win I felt that this team allowed me to take games off highly skilled players 
+if I were able to predict them accurately. However, Iost this set 2-0 from Kimo as he played extremely well, and despite the fact I was 
+able to make the correct read and eliminate his Thundurus both times he was able to win the war of attrition and take both games.
+}
 [ssh]{Week 3: Matame}
 [p]{Me:}
 [mon]{gardevoir-mega,landorus-therian,thundurus,heatran,amoonguss,azumarill}
 [paste]{https://pokepast.es/8af4c252c5e24445}
 [p]{Matame:}
 [mon]{kangaskhan-mega,landorus-therian,thundurus,volcarona,amoonguss,milotic}
-[p]{Playing hyper aggressively didn't pay off for me the previous week, so I decided to go back to my comfort zone and play with my Gardevoir CHALK team. He ended up using a fairly standard kangaskhan team, with a few interesting choices such as Milotic for the water slot, Volcarona over Heatran and then Aegislash over Cresselia. He played far more aggressively than I was prepared to deal with for my team, knocking out my Amoonguss on the switch-in turn one game one with Hidden Power Ice and Double-Edge and I didn't have the offensive pressure to deal with his team after that. Game two I wasn't able to keep things together and ended up losing, in what I think was at least a somewhat unfavourable matchup. However Matame played really well, and gave me a new appreciation to the skill of high level Smogon Doubles players.}
+[p]{
+Playing hyper aggressively didn't pay off for me the previous week, so I decided to go back to my comfort zone and play with my Gardevoir 
+CHALK team. He ended up using a fairly standard kangaskhan team, with a few interesting choices such as Milotic for the water slot, 
+Volcarona over Heatran and then Aegislash over Cresselia. He played far more aggressively than I was prepared to deal with for my team, 
+knocking out my Amoonguss on the switch-in turn one game one with Hidden Power Ice and Double-Edge and I didn't have the offensive 
+pressure to deal with his team after that. Game two I wasn't able to keep things together and ended up losing, in what I think 
+was at least a somewhat unfavourable matchup. However Matame played really well, and gave me a new appreciation to the skill 
+of high level Smogon Doubles players.
+}
 [ssh]{Week 4: MiltankMilk}
 [p]{Me:}
 [mon]{salamence-mega,excadrill,tyranitar,aegislash,amoonguss,azumarill}
 [paste]{https://pokepast.es/8958c395e5ff1d6e}
 [p]{Miltank:}
 [mon]{charizard-mega-y,salamence-mega,landorus-therian,thundurus,cresselia,gengar}
-[p]{After losing the last two weeks, I thought I'd experiment a little with a somewhat unusual team, based off a relatively standard but less common archetype. I kept the scarf Tyranitar set, but decided to use a mixed timid set with Ice Beam, Flamethrower and Dark Pulse in order to catch my opponent off guard and put pressure on intimidate switch-ins. My Salamence was bulky dragon dance to compliment this, and provided for a strong setup support combination with Azumarill and Amoonguss. With the right plays and a pretty favourable matchup, I was able to take this set in two games.}
+[p]{
+After losing the last two weeks, I thought I'd experiment a little with a somewhat unusual team, based off a relatively standard but less 
+common archetype. I kept the scarf Tyranitar set, but decided to use a mixed timid set with Ice Beam, Flamethrower and Dark Pulse in order 
+to catch my opponent off guard and put pressure on intimidate switch-ins. My Salamence was bulky dragon dance to compliment this, and 
+provided for a strong setup support combination with Azumarill and Amoonguss. With the right plays and a pretty favourable matchup, 
+I was able to take this set in two games.
+}
 [ssh]{Week 5: Didn't Play}
-[p]{We were already out of contention of making playoffs, so we decided to let the people who hadn't had many opportunities to play have a chance this round. As a result of this, Pyritie and Quixxter took the Battle Spot Doubles slots this week.}
+[p]{
+We were already out of contention of making playoffs, so we decided to let the people who hadn't had many opportunities to play 
+have a chance this round. As a result of this, Pyritie and Quixxter took the Battle Spot Doubles slots this week.
+}
 [sh]{Ladder Hero Meme Dream: Shedinja}
-[p]{Outside of VGC tournaments and online competitions, one thing which myself, Jack Buckley (@Arahpthos) and Paulo Amedee (@Mastodon_Swoles) played around with on ladder quite a lot was a Shedinja team, which saw many variations over several months of playing.}
+[p]{
+Outside of VGC tournaments and online competitions, one thing which myself, Jack Buckley and Paulo Amedee played around with on 
+ladder quite a lot was a Shedinja team, which saw many variations over several months of playing.
+}
 [mon]{xerneas,groudon-primal,salamence-mega,smeargle,shedinja,bronzong}
 [paste]{https://pokepast.es/b917000715abfdf0}
 [mon]{xerneas,groudon-primal,salamence-mega,smeargle,shedinja,amoonguss}
 [paste]{https://pokepast.es/8262078f7a6e54cf}
-[p]{The team abused the fact that in VGC2016, very few teams had any way to hit a soaked Shedinja so in many games you could simply lead Smeargle Xerneas, switch your Xerneas to Shedinja, click soak and call it a day. Of course, the game didn't always end there - Often you'd get to play out twenty to thirty turns of your opponents abusing you, but honestly that was at least a good part of the fun. The most variable slot on the team was the Amoonguss, which overwent a number of changes including Bronzong, Golduck and Mega Kangaskhan.}
+[p]{
+The team abused the fact that in VGC2016, very few teams had any way to hit a soaked Shedinja so in many games you could simply 
+lead Smeargle Xerneas, switch your Xerneas to Shedinja, click soak and call it a day. Of course, the game didn't always end there -
+ Often you'd get to play out twenty to thirty turns of your opponents abusing you, but honestly that was at least a good part of 
+ the fun. The most variable slot on the team was the Amoonguss, which overwent a number of changes including Bronzong, Golduck and Mega Kangaskhan.
+ }
 [sh]{Additional Pastebins}
-[p]{While many of my teams were lost, there are a number which I have been able to recover. They don't fit into any other section, so I'll be going into them a little bit here.}
+[p]{
+While many of my teams were lost, there are a number which I have been able to recover. They don't fit into any other section, so I'll be going into them a little bit here.
+}
 [ssh]{Xerneas Kyogre}
 [mon]{xerneas,kyogre-primal,salamence-mega,kangaskhan-mega,bronzong,thundurus}
 [paste]{https://pokepast.es/86f99e2df36052bd}
@@ -442,7 +709,17 @@ Versatile lead which allows for immediate offense, or Follow Me + setup
 [mon]{yveltal,kyogre,gengar-mega,raichu,bronzong,hitmontop}
 [paste]{https://pokepast.es/53af434df7811bad}
 [h]{Conclusion}
-[p]{While my season started incredibly poorly, I think overall this was an extremely important format for my development as a player and helped me learn some key skills about playing video games competitively at any level - And this lead to my two breakout performances, at Brisbane regionals and Australian nationals. It was also the year where I got to meet a number of interstate and international friends for the first time, which has really helped me keep involved with the game since. Competition has only gotten harder since 2016, as the general player skill level has increased and the skill level of Australian top players has increased immensely. As the competiton improves, you have to improve as well and I think this has been an exciting time for Australian VGC and our standings as a country in terms of global player skill. In addition this, I feel very privileged to have been able to represent the Lumiose Mimes in the APL and the Virdian Rhydons for BSPL and both teams helped me improve immensely as a player, and tought me new things about Pokemon - VGC and otherwise. I hope you've enjoyed reading this report, and look forward to sharing more Pokemon content with you all!}
+[p]{
+While my season started incredibly poorly, I think overall this was an extremely important format for my development as a player and helped me learn some key 
+skills about playing video games competitively at any level - And this lead to my two breakout performances, at Brisbane regionals and Australian nationals. 
+It was also the year where I got to meet a number of interstate and international friends for the first time, which has really helped me keep involved 
+with the game since. Competition has only gotten harder since 2016, as the general player skill level has increased and the skill level of Australian 
+top players has increased immensely. As the competiton improves, you have to improve as well and I think this has been an exciting time for Australian 
+VGC and our standings as a country in terms of global player skill. In addition this, I feel very privileged to have been able to represent the 
+Lumiose Mimes in the APL and the Virdian Rhydons for BSPL and both teams helped me improve immensely as a player, and tought me new things about 
+Pokemon - VGC and otherwise.
+}
+[p]{I hope you've enjoyed reading this report, and look forward to sharing more Pokemon content with you all!}
 `
   }
 ]

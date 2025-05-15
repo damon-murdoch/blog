@@ -1,3 +1,27 @@
+function getCleanUrl(url) {
+  // Remove '#' from url
+  url = url.replace('#','');
+
+  // Remove arguments from url
+  return url.split('?')[0];
+}
+
+function getTags(tags) {
+  // Tags list
+  let list = [];
+
+  // Get the clean (base) url for the page
+  const url = getCleanUrl(window.location.href);
+
+  // Loop over the tags
+  for(const tag of tags) {
+    list.push(`<a class='link' href='${url}?tag=${tag}'>${tag}</a>`);
+  }
+
+  // Add table, tr elements to the contents
+  return `<p class='link'>${list.join(', ')}</p>`;
+}
+
 function parseMonSprites(content) {
   // Pokemon sprite regex
   const regex = /\[mon\]\{(.*?)\}/g;
