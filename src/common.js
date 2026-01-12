@@ -54,7 +54,7 @@ function parseMonSprites(content) {
 
 function parseList(content) {
   // Pokemon sprite regex
-  const regex = /\[(ul|li)\]\{(.*?)\}/gs;
+  const regex = /\[(ul|ol)\]\{(.*?)\}/gs;
 
   // Search over all of the 'list' regexes
   for (const match of content.matchAll(regex)) {
@@ -119,6 +119,59 @@ function parseLink(content) {
 
       // Replace the original with the link
       content = content.replace(fullMatch, link);
+    }
+    else // More / less than 2 values
+    {
+      console.warn(`Failed for line ${match}: ${kv.length} values found, but 2 are expected.`)
+    }
+  }
+
+  // Updated content
+  return content;
+}
+
+
+function parseImage(content) {
+
+  // [image]{Replacement Text,image url,behavior}
+
+  // Pokemon sprite regex
+  const regex = /\[image\]\{(.*?)\}/g;
+
+  // Search over all of the 'mon' regexes
+  for (const match of content.matchAll(regex)) {
+
+    // Full string match
+    const fullMatch = match[0];
+
+    // Get the matched sprites
+    const kv = match[1].split(',');
+
+    // Exactly 3 values
+    if (kv.length == 3) {
+
+      // Dereference keys
+      const alt = kv[0];
+      const src = kv[1];
+
+      // Placeholder
+      let image = "";
+
+      // Image Behavior
+      const behavior = kv[2];
+      switch(behavior) {
+        case 'fit':
+          // Fit image to parent width
+          image = `<a href='${src}' target='_Blank'><img src='${src}' alt='${alt}' class='img-fluid'></a>`;
+        break;
+        default: 
+          // Default link behavior
+          image = `<img src='${src}' alt='${alt}'>`;
+        break;
+      }
+
+      // Replace the original with the link
+      content = content.replace(fullMatch, image);
     }
     else // More / less than 2 values
     {
@@ -205,11 +258,14 @@ function parse(content) {
   // Parse formatting
   content = parseFormatting(content);
 
-  // Parse lists
-  content = parseList(content);
-
   // Parse links
   content = parseLink(content);
+
+  // Parse images
+  content = parseImage(content);
+
+  // Parse lists
+  content = parseList(content);
 
   // Parse generic sections
   content = parseGeneric(content);
