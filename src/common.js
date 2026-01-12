@@ -1,6 +1,6 @@
 function getCleanUrl(url) {
   // Remove '#' from url
-  url = url.replace('#','');
+  url = url.replace('#', '');
 
   // Remove arguments from url
   return url.split('?')[0];
@@ -14,7 +14,7 @@ function getTags(tags) {
   const url = getCleanUrl(window.location.href);
 
   // Loop over the tags
-  for(const tag of tags) {
+  for (const tag of tags) {
     list.push(`<a class='link' href='${url}?tag=${tag}'>${tag}</a>`);
   }
 
@@ -130,7 +130,6 @@ function parseLink(content) {
   return content;
 }
 
-
 function parseImage(content) {
 
   // [image]{Replacement Text,image url,behavior}
@@ -159,15 +158,15 @@ function parseImage(content) {
 
       // Image Behavior
       const behavior = kv[2];
-      switch(behavior) {
+      switch (behavior) {
         case 'fit':
           // Fit image to parent width
           image = `<a href='${src}' target='_Blank'><img src='${src}' alt='${alt}' class='img-fluid'></a>`;
-        break;
-        default: 
+          break;
+        default:
           // Default link behavior
           image = `<img src='${src}' alt='${alt}'>`;
-        break;
+          break;
       }
 
       // Replace the original with the link
