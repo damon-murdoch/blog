@@ -18,36 +18,20 @@ species and modern battle mechanics up to Generation 9. New species have also be
 randomly generated competitive sets which get more challenging the further you go!
 }
 [p]{
-The game automatically starts at the Battle Frontier with a Volcarona and Smeargle with Surf, Fly, Waterfall and Dive for convenience. 
-You are given $50,000 to start to build your first team, or buy one of the sample teams. What you do from there is up to you! The main
-story aspects of the game have been removed, and all necessary key items are in your bag from the start - However post-game events such 
-as the Mystic Ticket, Aurora Ticket and Old Sea Map are still available.
+The game starts at the Battle Frontier with a Volcarona and Smeargle with all of the necessary HMs learned for convenience. The main 
+story of the game has been removed, and all necessary key items are in your bag from the start - However post-game events such as 
+the Mystic Ticket, Aurora Ticket and Old Sea Map are still available. You are given $50,000 to start to build your first team, or 
+buy one of the sample teams - What you do from there is up to you!
 }
 [h]{New Features}
-
-[sh]{Quality of Life Features}
-[ul]{
-New moves, species, battle mechanics, and more - Thanks to the [link]{pokeemerald-expansion,https://github.com/rh-hideout/pokeemerald-expansion} project
-Exchange freely between Battle Points, Game Corner Coins and Money using new Currency Exchangers
-Customise your team by swapping Pokeballs directly from the party menu
-}
-
-[table]{
-[tr]{
-[image]{BP To Money Converter,https://github.com/damon-murdoch/ebr-resources/blob/main/images/bp-to-money.png?raw=true}
-[image]{Coins To Money Converter,https://github.com/damon-murdoch/ebr-resources/blob/main/images/coins-to-money.png?raw=true?raw=true}
-[image]{Swap Pokeballs in Menu,https://github.com/damon-murdoch/ebr-resources/blob/main/images/pokeball-swap.png?raw=true?raw=true}
-}
-}
-
 [sh]{Battle Frontier Enhancements}
 [ul]{
 Level Scaling for Battle Frontier Facilities (lvl. 50), as well as Battle Tents (lvl. 30)
 Completely randomised Battle Frontier opponent mons, including new species - Which scale in difficulty depending on your win streak
 Customisable Battle Frontier rules - Change allowed gimmicks, team generation behavior, background music, and more using new NPCs at each facility
-Open Battle Rules are now played at lvl. 50, and allow for 'restricted' legendaries to be used - By both you and your opponents!
+Mega Evolutions, Z-Moves, Terastalisation, and Dynamax are all available for use by both you and your opponents (Depending on rules)
+Open Battle Rules are now played at lvl. 50, and allow for 'restricted' legendaries to be used by both you and your opponents
 }
-
 [table]{
 [tr]{
 [image]{Mega Gengar Icy Wind,https://github.com/damon-murdoch/ebr-resources/blob/main/images/battle1.png?raw=true}
@@ -65,9 +49,31 @@ Open Battle Rules are now played at lvl. 50, and allow for 'restricted' legendar
 [image]{Battle Factory Yveltal,https://github.com/damon-murdoch/ebr-resources/blob/main/images/battle-factory-restricted.png?raw=true}
 }
 }
-
-# TODO: INSERT PICTURE OF CUSTOMISATION NPC, MODERN POKEMON OPPONENTS, IDK SOMETHING ELSE
-
+[sh]{Item Changes}
+[ul]{
+Tera Shards are used from the party menu to change a Pokemon's tera type
+Silver bottle caps are used from the party menu to increase all of a Pokemon's IVs to 31
+Gold Bottle Caps can be exchanged for shiny Pokemon at the Pokemon Breeder and Legendary Shop
+Feathers now increase stats by 4, PokeDrugs (Zinc, Carbos, Etc) and Mochi now increase stats by 28 - So you can max a stat with exactly 9 uses
+Razz, Bluk, Nanab, Wepear, Pinap and Cornn berries all increase a Pokemon's HP, Attack, Defense, Sp.Atk, Sp.Def, and Speed IVs by one respectively
+Magost, Rabuta, Nomel, Spelon, Pamtre and Watmel berries all reduce a Pokemon's HP, Attack, Defense, Sp.Atk, Sp.Def, and Speed IVs by one respectively
+Linking Cords can now be used to evolve any Pokemon into their regional evolution (e.g.) Pikachu into Alolan Raichu, including Ursaring into Ursaluna-Blood Moon
+Switch between normal battles (Megas, Z-Moves, and Tera) and Dynamax battles by toggling the Dynamax Band on or off in the bag menu
+Durin and Belue berries lower a Pokemon's Attack and Speed IVs to zero respectively
+Pokeballs can now be used from the bag to replace a Pokemon's ball (original ball is not returned, Cherish and Master Balls cannot be replaced)
+}
+[table]{
+[tr]{
+[image]{Dynamax Band Toggle,https://github.com/damon-murdoch/ebr-resources/blob/main/images/dynamax-band-toggle.png?raw=true}
+[image]{Durin Berry Text,https://github.com/damon-murdoch/ebr-resources/blob/main/images/durin-berry-text.png?raw=true}
+[image]{Swap Pokeballs in Menu,https://github.com/damon-murdoch/ebr-resources/blob/main/images/pokeball-swap.png?raw=true?raw=true}
+}
+[tr]{
+[image]{Gold Bottle Cap,https://github.com/damon-murdoch/ebr-resources/blob/main/images/gold-bottle-cap.png?raw=true}
+[image]{Petilil Can Evolve,https://github.com/damon-murdoch/ebr-resources/blob/main/images/petilil-can-evolve.png?raw=true}
+[image]{Petilil Evolved,https://github.com/damon-murdoch/ebr-resources/blob/main/images/petilil-evolve.png?raw=true}
+}
+}
 [sh]{Battle Frontier Underground}
 [ul]{
 Entrances at five facilities (Battle Dome, Battle Tower, Battle Pyramid, Battle Pike and Battle Palace)
@@ -94,18 +100,17 @@ Gigantamax Expert / High-Value BP Exchange
 [image]{Pokemon Shop,https://github.com/damon-murdoch/ebr-resources/blob/main/images/pokemon-shop.png?raw=true}
 [image]{Legendary Shop,https://github.com/damon-murdoch/ebr-resources/blob/main/images/legendary-shop.png?raw=true}
 }
+[tr]{
+[image]{Set Shop,https://github.com/damon-murdoch/ebr-resources/blob/main/images/sets-shop.png?raw=true}
+[image]{BP To Money Converter,https://github.com/damon-murdoch/ebr-resources/blob/main/images/bp-to-money.png?raw=true}
+[image]{Coins To Money Converter,https://github.com/damon-murdoch/ebr-resources/blob/main/images/coins-to-money.png?raw=true?raw=true}
+}
 }
 [h]{Locations (Click to Expand)}
 [sh]{Battle Frontier Overworld}
 [image]{Battle Frontier Overworld Map,https://github.com/damon-murdoch/ebr-resources/blob/main/images/maps/battle-frontier.png?raw=true}
 [sh]{Battle Frontier Underground}
 [image]{Battle Frontier Underground Map,https://github.com/damon-murdoch/ebr-resources/blob/main/images/maps/underground.png?raw=true}
-[h]{Planned Features}
-[ul]{
-Modern opponents for the Battle Dome (Currently, just has the default Gen 3 Opponents)
-Four Pokemon selectable in non-Battle Tower doubles facilities
-Continued improvement to opponent generation logic (better item selection, etc.)
-}
 [h]{Setup}
 [ol]{
 Download the latest patch from [link]{releases,https://github.com/damon-murdoch/pokeemerald-expansion/releases}
@@ -116,6 +121,9 @@ Enjoy!
 [h]{Resources}
 [ul]{
 [link]{Pokemon Learnsets,https://github.com/damon-murdoch/ebr-resources/blob/main/learnset_data.md}
+[link]{Development Changelog,https://github.com/damon-murdoch/pokeemerald-expansion/blob/ebr-stable/ebr-changelog.md}
+[link]{Issues and Planned Features,https://github.com/damon-murdoch/pokeemerald-expansion/issues}
+[link]{RH-Hideout Discord Project Discussion Thread,https://discord.com/channels/419213663107416084/1195937414926057492}
 }
 `
   },
