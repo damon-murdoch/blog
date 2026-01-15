@@ -147,27 +147,14 @@ function parseImage(content) {
     const kv = match[1].split(',');
 
     // Exactly 3 values
-    if (kv.length == 3) {
+    if (kv.length == 2) {
 
       // Dereference keys
       const alt = kv[0];
       const src = kv[1];
 
-      // Placeholder
-      let image = "";
-
-      // Image Behavior
-      const behavior = kv[2];
-      switch (behavior) {
-        case 'fit':
-          // Fit image to parent width
-          image = `<a href='${src}' target='_Blank'><img src='${src}' alt='${alt}' class='img-fluid'></a>`;
-          break;
-        default:
-          // Default link behavior
-          image = `<img src='${src}' alt='${alt}'>`;
-          break;
-      }
+      // Fit image to parent width
+      const image = `<a href='${src}' target='_Blank'><img src='${src}' alt='${alt}' class='img-fluid'></a>`;
 
       // Replace the original with the link
       content = content.replace(fullMatch, image);
@@ -176,6 +163,60 @@ function parseImage(content) {
     {
       console.warn(`Failed for line ${match}: ${kv.length} values found, but 2 are expected.`)
     }
+  }
+
+  // Updated content
+  return content;
+}
+
+function parseTable(content) {
+  
+  // [image]{Replacement Text,image url,behavior}
+
+  // Table Rows / Headers
+  const regex_tr_th = /\[(tr|th)\]\{(.*?)\}/gs;
+
+  // Search over all of the 'tr', 'th' regexes
+  for (const match of content.matchAll(regex_tr_th)) {
+
+    // Row contents
+    const row = [];
+
+    // Full string match
+    const fullMatch = match[0];
+
+    // Columns within the row
+    const cols = match[2].split('\n');
+
+    // Loop over the columns
+    for(const col of cols) {
+      // Add column to table if it has any contents
+      if (col.length > 0) row.push(`<td>${col}</td>`);
+    }
+
+    // Generate the text for the full row
+    const parsed = `<${match[1]}>${row.join("")}</${match[1]}>`
+
+    // Replace the original with the link
+    content = content.replace(fullMatch, parsed);
+  }
+
+  const regex_table = /\[table\]\{(.*?)\}/gs;
+
+  // Search for all of the 'table' regexes
+  for(const match of content.matchAll(regex_table)) {
+
+    // <div class='table-responsive'>
+    // <table class='mx-auto w-auto'>
+
+    // Full string match
+    const fullMatch = match[0];
+
+    // Create table
+    const parsed = `<div class='table-responsive'><table class='mx-auto w-auto'>${match[1]}</table></div>`;
+
+    // Replace the original with the link
+    content = content.replace(fullMatch, parsed);
   }
 
   // Updated content
@@ -250,7 +291,15 @@ function parseGeneric(content) {
   return content;
 }
 
+function removeComments(content) {
+  return content.replace(/#.*$/gm, '');
+}
+
 function parse(content) {
+
+  // Remove comments
+  content = removeComments(content);
+
   // Parse Pokemon sprites
   content = parseMonSprites(content);
 
@@ -265,6 +314,9 @@ function parse(content) {
 
   // Parse lists
   content = parseList(content);
+
+  // Parse tables
+  content = parseTable(content);
 
   // Parse generic sections
   content = parseGeneric(content);

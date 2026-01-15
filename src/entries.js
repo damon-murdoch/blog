@@ -17,6 +17,12 @@ This project is based on [link]{pokeemerald-expansion,https://github.com/rh-hide
 species and modern battle mechanics up to Generation 9. New species have also been added as opponents to the Battle Frontier and have
 randomly generated competitive sets which get more challenging the further you go!
 }
+[p]{
+The game automatically starts at the Battle Frontier with a Volcarona and Smeargle with Surf, Fly, Waterfall and Dive for convenience. 
+You are given $50,000 to start to build your first team, or buy one of the sample teams. What you do from there is up to you! The main
+story aspects of the game have been removed, and all necessary key items are in your bag from the start - However post-game events such 
+as the Mystic Ticket, Aurora Ticket and Old Sea Map are still available.
+}
 [h]{New Features}
 
 [sh]{Quality of Life Features}
@@ -26,16 +32,41 @@ Exchange freely between Battle Points, Game Corner Coins and Money using new Cur
 Customise your team by swapping Pokeballs directly from the party menu
 }
 
-[p]{[b]{TODO: INSERT PICTURE OF LANDORUS IN FRONT OF BATTLE TOWER, CURRENCY CONVERTERS, POKEBALL SWAPPING}}
+[table]{
+[tr]{
+[image]{BP To Money Converter,https://github.com/damon-murdoch/ebr-resources/blob/main/images/bp-to-money.png?raw=true}
+[image]{Coins To Money Converter,https://github.com/damon-murdoch/ebr-resources/blob/main/images/coins-to-money.png?raw=true?raw=true}
+[image]{Swap Pokeballs in Menu,https://github.com/damon-murdoch/ebr-resources/blob/main/images/pokeball-swap.png?raw=true?raw=true}
+}
+}
 
 [sh]{Battle Frontier Enhancements}
 [ul]{
 Level Scaling for Battle Frontier Facilities (lvl. 50), as well as Battle Tents (lvl. 30)
 Completely randomised Battle Frontier opponent mons, including new species - Which scale in difficulty depending on your win streak
 Customisable Battle Frontier rules - Change allowed gimmicks, team generation behavior, background music, and more using new NPCs at each facility
+Open Battle Rules are now played at lvl. 50, and allow for 'restricted' legendaries to be used - By both you and your opponents!
 }
 
-[p]{[b]{TODO: INSERT PICTURE OF CUSTOMISATION NPC, MODERN POKEMON OPPONENTS, IDK SOMETHING ELSE}}
+[table]{
+[tr]{
+[image]{Mega Gengar Icy Wind,https://github.com/damon-murdoch/ebr-resources/blob/main/images/battle1.png?raw=true}
+[image]{Kommo-o Z-Move,https://github.com/damon-murdoch/ebr-resources/blob/main/images/battle2.png?raw=true}
+[image]{Flutter Mane Z-Move,https://github.com/damon-murdoch/ebr-resources/blob/main/images/battle3.png?raw=true}
+}
+[tr]{
+[image]{Primal Groudon,https://github.com/damon-murdoch/ebr-resources/blob/main/images/p-groudon.png?raw=true}
+[image]{Primal Kyogre,https://github.com/damon-murdoch/ebr-resources/blob/main/images/p-kyogre.png?raw=true}
+[image]{Mega Rayquaza,https://github.com/damon-murdoch/ebr-resources/blob/main/images/m-rayquaza.png?raw=true}
+}
+[tr]{
+[image]{Xerneas Geomancy,https://github.com/damon-murdoch/ebr-resources/blob/main/images/geomancy.png?raw=true}
+[image]{Battle Factory Riolu,https://github.com/damon-murdoch/ebr-resources/blob/main/images/battle-factory.png?raw=true}
+[image]{Battle Factory Yveltal,https://github.com/damon-murdoch/ebr-resources/blob/main/images/battle-factory-restricted.png?raw=true}
+}
+}
+
+# TODO: INSERT PICTURE OF CUSTOMISATION NPC, MODERN POKEMON OPPONENTS, IDK SOMETHING ELSE
 
 [sh]{Battle Frontier Underground}
 [ul]{
@@ -57,13 +88,18 @@ TM Shop
 Pokeball Shop / General Store
 Gigantamax Expert / High-Value BP Exchange
 }
+[table]{
+[tr]{
+[image]{Team Shop,https://github.com/damon-murdoch/ebr-resources/blob/main/images/team-shop.png?raw=true}
+[image]{Pokemon Shop,https://github.com/damon-murdoch/ebr-resources/blob/main/images/pokemon-shop.png?raw=true}
+[image]{Legendary Shop,https://github.com/damon-murdoch/ebr-resources/blob/main/images/legendary-shop.png?raw=true}
+}
+}
 [h]{Locations (Click to Expand)}
 [sh]{Battle Frontier Overworld}
-[image]{Battle Frontier Overworld Map,https://github.com/damon-murdoch/ebr-resources/blob/main/images/maps/battle-frontier.png?raw=true,fit}
+[image]{Battle Frontier Overworld Map,https://github.com/damon-murdoch/ebr-resources/blob/main/images/maps/battle-frontier.png?raw=true}
 [sh]{Battle Frontier Underground}
-[image]{Battle Frontier Underground Map,https://github.com/damon-murdoch/ebr-resources/blob/main/images/maps/underground.png?raw=true,fit}
-[sh]{Battle Frontier Underground Interiors}
-[image]{Battle Frontier Underground Interiors,https://github.com/damon-murdoch/ebr-resources/blob/main/images/maps/underground-interiors.png?raw=true,fit}
+[image]{Battle Frontier Underground Map,https://github.com/damon-murdoch/ebr-resources/blob/main/images/maps/underground.png?raw=true}
 [h]{Planned Features}
 [ul]{
 Modern opponents for the Battle Dome (Currently, just has the default Gen 3 Opponents)
