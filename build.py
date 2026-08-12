@@ -1,12 +1,10 @@
-import sys, os, re, copy
+import os, re, copy
 
 import json as JSON
 
 from datetime import datetime
 
 from markdown import markdown
-
-import xml.etree.ElementTree as etree
 
 # Entries input path
 INPUT_PATH = "./entries"
@@ -264,8 +262,6 @@ def build_entries(paths):
             # If the item is a directory
             if os.path.isdir(item_path):
 
-                print("is folder:", item_path)
-
                 # Add to the paths list (temporary)
                 paths.append(item_path)
 
@@ -299,8 +295,6 @@ def build_entries(paths):
             # Item is a file
             if os.path.isfile(item_path):
 
-                print("is file:", item_path)
-
                 # Get the file extension
                 _, ext = os.path.splitext(item_path)
 
@@ -309,7 +303,26 @@ def build_entries(paths):
                         entries.append(parse_html(item_path))
 
                     case ".md":
-                        entries.append(parse_markdown(item_path))
+                        # Convert markdown filename to html file
+                        html_path = item_path.replace(".md", ".html")
+
+                        # No matching html file found
+                        if not os.path.exists(html_path):
+
+                            # Convert markdown to html
+                            html = parse_markdown(item_path)
+
+                            content = html["content"]
+
+                            # Save converted html to file
+                            with open(html_path, "w+") as f:
+                                f.write(f"{content}\n")
+
+                            # Add converted html to properties
+                            entries.append(parse_markdown(item_path))
+
+                        # If matching html file is found, will not be re-generated unless that file is deleted first
+                        # This allows for fine-tuned adjustments to be made in the raw html for the blog entry
 
                     case ".properties":
                         properties = parse_properties(item_path)
